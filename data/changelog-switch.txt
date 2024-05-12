@@ -1,0 +1,167 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.1.106
+  Gui:
+    - Added Paste button to exchange string import GUIs
+    - Scrolling is smoother when using scrollbars with a controller.
+    - Controller button hints GUI will try to move out of the way of chat messages.
+  Bugfixes:
+    - Fixed crash when trying to exit the application while the controller support applet is active(after changing console play modes)
+    - Fixed freeze when changing console play modes while the on-screen keyboard is active.
+    - Fixed crash when finishing a mini-tutorial after changing the input method from keyboard and mouse to controller while in the mini-tutorial.
+    - Fixed strange entity selection behavior after finishing a mini-tutorial after changing the input method from controller to keyboard and mouse while in the mini-tutorial.
+    - Fixed that LuaForce::chart_all() wouldn't chart surfaces that had never had any charting.
+    - Fixed LuaEntity::circuit_connection_definitions could return copper wires from ghost entities.
+    - Fixed a desync related to changing in-progress infinite research levels.
+    - Fixed copying train stop settings could cause some trains to arrive.
+    - Fixed a save corruption issue related to large amounts of overlapping small electric poles.
+    - Fixed entity status icons being visible in simulations.
+    - Fixed a crash when giving NaN values to some lua APIs.
+    - Fixed a desync when changing the force of a requester chest with filters set from the circuit network.
+    - Fixed a rendering issue with pumpjack arrows when holding some items.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.104
+  Gui:
+    - Trying to close a window will first close any opened drop-down. This improves navigating drop-downs with controllers.
+  Bugfixes:
+    - Fixed intro sound being choppy sometimes.
+    - Fixed controller relative driving mode steering left and right repeatedly in multiplayer.
+    - Fixed controller relative driving mode causing jittery movement when driving backwards.
+    - Fixed crash when placing linked chest in multiplayer with hotkey suggestions enabled.
+    - Fixed that migration_applied was always false in the on_configuration_changed event.
+    - Fixed that item health bars didn't render correctly at some scales.
+    - Fixed a crash when the server has disconnected while setting quickbar slots.
+    - Fixed that the delete save confirm could delete the wrong save if a different one was selected while it was showing.
+    - Fixed that the custom camera widget wouldn't render entity status icons correctly.
+    - Fixed that LuaGameScript::auto_save() wouldn't work if the root saves folder didn't already exist.
+    - Fixed that selecting a group in the chat icon selector GUI would occasionally select a random result.
+    - Fixed tank not consuming fuel when turning while braking.
+    - Fixed train could not advance from destination full state when a train stop placed from blueprint was built before a rail next to it.
+    - Fixed partial item transfer not preserving inventory hand location.
+    - Fixed transport belt would keep saying "Disabled by control behavior" after circuit wires were removed.
+    - Fixed a crash when searching in certain icon selector GUIs.
+    - Fixed that empty locale would cause things to not show in GUIs.
+    - Fixed that LuaFluidBox::get_fluid_system_contents() did not behave correctly when the fluid box was not part of a fluid system.
+  Debug:
+    - Added show_generated_chunks debug option which shows uncharted yet generated chunks on the map.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.101
+  Bugfixes:
+    - Fixed a crash when entering bad number values in some input fields.
+    - Fixed a crash when removing an item that is being used to hand craft a recipe while also changing the recipe to take fluid ingredients.
+    - Fixed a crash when defining a recipe that takes zero fluid as the first ingredient.
+    - Fixed cloning a furnace would not preserve previous recipe id.
+    - Fixed that selecting a locale would sometimes reset the setting back to "Default"
+    - Fixed that choose-elem-button equipment tooltips were missing the equipment name and description.
+    - Fixed being unable to focus search in the train overview GUI with Control + F when a mod attaches a relative GUI element to it.
+    - Fixed a crash when item stack of item-on-ground becomes empty because of scripted stack transfer.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.100
+  Optimizations:
+    - Optimized saving time slightly.
+    - Reduced memory usage slightly.
+  Changes:
+    - Technology researched message does not play chat notification sound.
+    - Pressing "Regenerate map" in the map editor will open the map generator.
+    - "Regenerate map" is no longer available in map editor for scenarios that don't use the map generator.
+  Bugfixes:
+    - Fixed crash when playing "Rocket rush" scenario.
+    - Fixed crashes when putting super large numbers in number input fields.
+    - Fixed a desync when putting super large numbers in the map editor brush size fields.
+    - Fixed a crash when changing the technology price multiplier while research is in progress.
+    - Fixed a desync related to manual crafting large recipe counts.
+    - Fixed rendering of cliff previews.
+    - Fixed train fulfilled fraction was always showing full green background.
+    - Fixed a desync when technology prices would grow beyond 18~ quintillion.
+    - Fixed a crash when entering large values for train wait times.
+    - Fixed that cloning rails in the map editor could lead to corrupt saves in some instances.
+    - Fixed offset of circuit connector sprites for inserters
+    - Fixed that pressing regenerate map in the map editor would change the map generator settings GUI next time it's used.
+    - Fixed that reset technology effects would advance infinite research in some cases. 
+    - Fixed loader would not connect to belts in preview in some cases.
+    - Fixed bad pumpjack drain logic related to yield.
+    - Fixed recipes with ingredients craftable for free could not be crafted.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.94
+  Minor Features:
+    - Added a notification when a technology is researched.
+    - Added /enable-research-queue console command to enable the research queue without disabling achievements.
+  Changes:
+    - The research queue is enabled by default for new games.
+  Bugfixes:
+    - The on-screen keyboard can now input new lines in multi-line text boxes.
+    - Fixed another rare crash when using very long belts(over 900 tiles).
+    - Fixed vibrations not working after changing controller configuration while the console is asleep.
+    - Fixed that selection tool with "cancel-deconstruct", "cancel-upgrade" or "downgrade" mode would not render selection of entities.
+    - Fixed it was possible to create maps with width or height larger than 2000000.
+    - Fixed recipe tooltip in assembling machine was doing intermediate crafting logic when showing items missing for crafting.
+    - Fixed inserter could take items from wrong side of a belt when the belt shape was changed.
+    - Fixed that heat buffer temperatures would not migrate correctly when changing the prototype maximum temperature.
+    - Fixed that the research queue would not be enabled by default for the Marathon and Death world marathon presets.
+    - Fixed fast replacing train stops would not preserve trains limit.
+    - Fixed that crafting machines did not handle item-with-tags type items correctly.
+    - Fixed server not showing in LAN server browser if the game is also public and with a different external port because of NAT.
+    - Fixed controller vibrations playing in keyboard and mouse mode.
+    - Fixed that pumpjacks would not show the correct status when they were stopped due to full fluid output.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.91
+  Minor Features:
+    - Added vibrations to vehicle collisions.
+  Bugfixes:
+    - Fixed that notch slider tooltips would not show in some cases.
+    - Fixed that any error with an audio stream would crash the game, improved audio stream error handling in general.
+    - Fixed a hang in audio streams.
+    - Fixed blueprint setup GUI cutting off at the bottom.
+    - Fixed cursor sometimes teleporting to nearby entities when selecting entities to be built from the Quick panel, in multiplayer.
+    - Fixed multiplayer desync with other platforms.
+    - Fixed a player could not obtain achievements if it was in game for longer than 9942h.
+    - Fixed that Build control was allowing binding to controller buttons that would not work.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.87
+  Features:
+    - Added keyboard and mouse support. Change input method in Settings->Controls to play using keyboard and mouse.
+  Minor Features:
+    - Added stick sensitivity setting.
+    - Added ability to quickly swap A and B buttons.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.82
+  Bugfixes:
+    - Reduced the number of crashes for players with very large saves running low on memory.
+    - Improved the latency of selecting entities in multiplayer.
+    - General bugfixes and improvements
+---------------------------------------------------------------------------------------------------
+Version: 1.1.80
+  Bugfixes:
+    - General bugfixes and improvements
+---------------------------------------------------------------------------------------------------
+Version: 1.1.76
+  Minor Features:
+    - Added vibration intensity setting to the control settings screen.
+    - Added absolute vehicle control mode as a setting in the control settings screen.
+    - Added option to enable predictive text for the on-screen keyboard. Enabling this also allows entering Chinese and Korean text and Japanese kanji characters.
+  Changes:
+    - When in free cursor mode with a GUI open, Left Stick will also move the cursor.    
+    - When in free cursor mode with Quick panel open, Left Stick will navigate the Quick panel normally.
+  Bugfixes:
+    - Fixed the cursor in the world map moving twice as fast in free cursor mode.
+    - Fixed GUI navigation getting stuck on AND/OR buttons in the locomotive GUI.
+    - Fixed GUI navigation navigating to empty technology slots in research queue.
+    - Fixed GUI navigation sometimes getting stuck when navigating large technology trees.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.74
+  Minor Features:
+    - Added option in Settings->Other to set an email and password to the account, so it can be used on other platforms or consoles.
+    - Added Danish localization
+  Bugfixes:
+    - Fixed crash when creating extremely long belts.
+    - Fixed crash when a textbox disappears while the on screen keyboard is still open.
+    - Fixed crash when exiting the game while a new map is being created.
+    - Fixed crash sometimes when transferring all items from character corpse.
+    - Fixed another crash when trying to save with a long save file name    
+---------------------------------------------------------------------------------------------------
+Version: 1.1.72
+  Bugfixes:
+    - Fixed crash when exiting the level while Quick Panel is open.
+    - Fixed crash when dying while Quick Panel is open.
+    - Fixed crash when trying to save with a long save file name
+    - Fixed that you could not map controller sticks in the control settings gui.
+    - Fixed memory leak related to OpenGL textures, affecting mostly main menu background simulations.    
