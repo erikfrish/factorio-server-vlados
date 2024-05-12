@@ -9,7 +9,13 @@ services:
       - "25565:25565"
     volumes:
       - factorio:/opt/factorio
-    # command: tail -F /bin/sh
+      - ./test:/factorio_headless/test
+      - ./saves:/opt/factorio/saves
+      - ./data:/opt/factorio/data
+      - ./config:/opt/factorio/config/
+    command:
+      # /bin/tar -xf /factorio_headless/factorio_headless.tar.gz -C /factorio_headless/test
+     tail -F /bin/sh
 
     # environment:
     #   - SAVE_FILE:init.zip
