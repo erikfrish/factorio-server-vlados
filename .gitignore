@@ -3,3 +3,5 @@ factorio_headless.tar.gz
 
 bin
 temp
+data/core
+data/base
