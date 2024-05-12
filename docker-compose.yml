@@ -13,7 +13,7 @@ services:
       - ./saves:/opt/factorio/saves
       - ./data:/opt/factorio/data
       - ./config:/opt/factorio/config/
-    command:
+    # command:
       # /bin/tar -xf /factorio_headless/factorio_headless.tar.gz -C /factorio_headless/test
     #  tail -F /bin/sh
 
