@@ -14,7 +14,7 @@ services:
       - ./data:/opt/factorio/data
       - ./config:/opt/factorio/config/
     command:
-      /bin/tar -xf /factorio_headless/factorio_headless.tar.gz -C /factorio_headless/test
+      # /bin/tar -xf /factorio_headless/factorio_headless.tar.gz -C /factorio_headless/test
     #  tail -F /bin/sh
 
     # environment:
