@@ -1,4 +1,684 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.42
+Date: 19. 03. 2025
+  Minor Features:
+    - GUIs can now also be navigated with the directional buttons.
+    - Added an option to mute sound categories in sound settings.
+    - Added an option to control the volume of Programmable speaker sounds via circuit network.
+    - Added an option to stop playing sounds of Programmable speaker when input signal changes instead of waiting for the sounds to finish playing.
+    - Added an option for Programmable speaker to use Cyclic sounds.
+    - Decider combinator output constant can be changed.
+    - Added additional information to Landing pad, Platform Hub and Cargo bay in factoriopedia.
+    - Furnaces can be connected to circuit network.
+    - Added fluid temperatures to Factoriopedia ingredients and products where relevant.
+    - Make drop item hotkey work the same way in GUI as it does in the game world.
+    - Extended the virtual signals, and unified/changed graphics of some of the existing ones.
+    - Added an ability to pin the selected resource patch directly from map view.
+    - Show a warning in the blueprint library if it's using a lot of RAM.
+    - Show a warning in blueprint and blueprint book tooltips if they are using a lot of RAM.
+    - Added fluid contents to the pumpjack tooltip.
+  Balancing:
+    - water-mud and water-shallow are now landfillable.
+  Graphics:
+    - Added more variations to small explosion to improve the visuals when many small entities explode at the same time.
+    - Used the new virtual signal icon for research also for the research icon in the production graphs.
+    - Fixed reflections on water being broken.
+  Changes:
+    - Added extra info about the evaluation order and dependencies into the blueprint parametrisation UI.
+    - Added missing open/close GUI sounds and fixed incorrect open/close GUI sounds for various entities.
+    - Changed the "Train stop names" checkbox in the blueprint ui to be always on by default.
+    - Adjusted how walking and driving sounds attenuate with zoom level.
+    - Added missing walking sounds and fixed incorrect walking sounds for various decoratives.
+    - Linked fluidbox connections will no longer show a fluid icon.
+    - Drag building produces one merge undo action per the whole drag, instead of the individual undo actions for every entity built.
+    - Reduced how much you can zoom out in god controller.
+    - Multiplayer selection rectangles will only show the player name if the player's character is not visible on-screen.
+  Optimizations:
+    - Improved belt reader performance.
+  Bugfixes:
+    - Fixed scaled rich text was not rendered properly.
+    - Fixed large amounts of unfulfilled requests blocking delivery of available items.
+    - Fixed rocket silo tooltip was not aggregating similar items from rocket inventory.
+    - Fixed that you couldn't re-select the same item when opening the remote view ghost picker.
+    - Fixed lamps with 'always_on' set in the prototype would still show the checkbox in the lamp GUI.
+    - Fixed train stop GUI recentering when trains count goes to 0.
+    - Fixed edit pin GUI clipping out of the screen at large GUI scales.
+    - Fixed map generator GUI scrollpane clipping the resource richness sliders.
+    - Fixed spidertron preview zooming in and out in the spidertron UI while walking.
+    - Fixed that the cheat mode crafting GUI didn't show quality options at all times.
+    - Fixed tight spot script crashing when in remote controller.
+    - Fixed that roboports marked for deconstruction still wanted to fulfill robot requests.
+    - Fixed that attacking biter bases directly or with artillery could award the "It stinks and they don't like it" achievement.
+    - Fixed spitters could get stuck attacking trees and rocks blocking their path without dealing any damage to them.
+    - Fixed that module replacement logic on space platforms didn't keep the old module if the new module wasn't available.
+    - Fixed that flying text was shown on all surfaces in some cases.
+    - Fixed that technology GUI allowed opening console in multiplayer.
+    - Removed several unused sprites.
+    - Fixed that prototype defined lamp colors didn't work.
+    - Fixed that hidden surface properties would still show in tooltips.
+    - Fixed wrong behaviour in smart belt building over an obstacle with belts soon after the obstacle.
+    - Fixed smart belt building over an obstacle when there is perpendicular underground belt in the way.
+    - Fixed a crash when wrapping a rich text image in color tags and pressing backspace.
+    - Fixed that roboport read-requests could output signals when they weren't actually being requested.
+    - Fixed missing link between vehicles and guns in Factoriopedia.
+    - Fixed a crash when changing GUI scale with the production statistics open.
+    - Fixed textboxes not clearing mouse drag selection when something is typed.
+    - Fixed that issuing valid navigation commands to UnitGroups would sometimes fail or succeed immediately.
+    - Fixed that attack area commands issued to UnitGroups were not finding valid targets in the attack area.
+    - Fixed that super-forced building over belts ignored planned upgrade when adding underground belts.
+    - Fixed modifier icon in technology icons would cause the technology icons to draw smaller and off center.
+    - Fixed stack inserter not dropping held item that does not match filters when filters were enabled.
+    - Fixed a crash with a working sound containing an empty main sound.
+    - Fixed the research completed sound being played multiple times when multiple researches finish on the same tick.
+    - Fixed Schedule interrupts not reading any-signal signal counts sent to train correctly.
+    - Fixed car orientation being lost when exporting and reimporting blueprint string.
+    - Fixed being able to remotely drive enemy vehicles
+    - Fixed unrotatable furnaces being rotated when overbuilt with a blueprint
+    - Fixed including any filter into deconstruction planner would make it ignore vehicle ghosts
+    - Fixed removing tile ghost would sometimes not remove supported entity ghost in the margins
+    - Fixed a desync when upgrading underground belts in some cases.
+    - Fixed a roboport network becoming overfilled with robots when a stationing robot went to a roboport which was being refilled by inserters and the network was full.
+    - Fixed that a robot didn't resume bobbing after unsuccessful stationing attempt.
+    - Fixed a consistency crash related to super force building and underground belts.
+    - Fixed that character light rendering would be wrong when paused while in remote view.
+    - Fixed issue which allowed player to get tile ghost over tile of same type (leading to stuck robots)
+    - Fixed entities with protected_from_tile_building = false would block tile ghost revival
+    - Fixed that unpowered inserters could pick up fish.
+    - Fixed that virtual items like green-wire or spidertron-remote had recycling recipes.
+    - Fixed a desync when deleting chart tags pinned by other players.
+    - Fixed consistency issues in deconstruction planner UI when toggling "Trees/rocks only" checkbox and tile mode dropdown.
+    - Fixed schedule GUI not updating temporary station status when interrupt triggers from a temporary station which is last in schedule.
+    - Fixed furnaces could report as being able to craft certain recipes when they had not enough item ingredient slots.
+    - Fixed assemblers could report as being able to craft certain recipes with custom fluidbox indexes when assembler had not enough fluidboxes.
+    - Fixed furnaces were able to craft recipes with more item products than size of furnace's products inventory.
+    - Added more detailed healing values for entities healing < 10/s.
+    - Fixed a crash when migrating assembler with control behavior into different entity type.
+    - Fixed that crafting machines with high speeds would not scale input fluid amounts.
+    - Fixed a crash in latency when character with exoskeletons moves onto ungenerated chunks.
+    - Fixed that equipment in map editor armor did not work.
+    - Fixed a consistency issue when underground belts with items are cloned.
+    - Fixed a consistency issue when robots deconstruct heat pipes keeping roboports from freezing.
+    - Fixed a crash when flipping an entity with linked fluidbox connections.
+    - Fixed a scaling performance issue related to blueprints with asteroid collector and thruster count on space platforms.
+    - Fixed a crash when placing ghost rail signal on top of existing rail signals that is marked to be upgraded.
+    - Fixed that copy-settings undo/redo action descriptions would use the wrong surface.
+    - Fixed that the map editor tile paint bucket tool did not highlight tiles correctly.
+    - Fixed that platform inactivity was not updated when sending cargo to planets.    - Fixed that a small empty UI box was visible on the main menu.
+    - Fixed a crash when generating a variable track would encounter a filesystem error.
+    - Fixed sound accents could play when they shouldn't on switching between machine GUIs.
+    - Fixed that the building preview and actual build position could differ at some resolutions and zooms.
+    - Fixed that clicking on a station in train GUI created unexpected browse history entries.
+    - Fixed that traversing train GUI browse history entries didn't preserve centered locomotive.
+    - Fixed that going back in history to remote driving didn't change player surface.
+    - Restored signal-ghost virtual signal.
+    - Fixed decider combinator gui could show old input or output signals when fps < ups and last signals change happened at skipped frame.
+    - Fixed construction robots storing incorrect items in a filtered storage chest if their upgrade job was cancelled.
+    - Fixed that changing the volume of a Programmable speaker wouldn't update the volume of a playing sound with Surface playback mode.
+    - Fixed that changing playback mode of a Programmable speaker wouldn't affect currently playing sounds.
+    - Fixed that trivial smokes for player effect could cause new chunks to be generated when looking at the map.
+    - Fixed missing walking sounds for rails.
+    - Fixed that undo removal of tile ghosts did not set the last user.
+    - Fixed that inserters could get stuck when interacting with trains if the train arrived at a station without physically moving.
+    - Fixed a crash when changing the station in some wait conditions.
+    - Fixed that the mining dril status would be incorrect when out of resources and pointing at an entity to be deconstructed.
+    - Fixed that inserters would not show target full for space platform hubs.
+    - Fixed a crash when opening the changelog while trying to connect to a multiplayer game.
+    - Fixed that vehicle weapon tooltips did not show bonuses.
+    - Fixed that steamrolled achievement couldn't be earned while driving remotely.
+    - Fixed lab was not creating trash inventory of proper size when LabPrototype::trash_inventory_size was given.
+    - Fixed that the side menu buttons did not update when a player would change forces.
+    - Fixed that the filter selection GUI would get closed when a ghost buffer chest was built.
+    - Improved issue with fast moving bots sometime appearing on screen instead of flying in from off screen.
+    - Fixed cutting tiles marked for deconstruction could produce superfluous deconstructible tile proxies
+    - Fixed that having a camera widget on screen would cause issues with the rail plan finder.
+    - Fixed that resources with no minable products would not show a name when hovering in the map view.
+    - Fixed some almost transparent pixels in the car and production group icons.
+    - Fixed that researching a technology would cause the input fields in constant combinators and requester chests to lose focus.
+    - Fixed not being able to interact with GUI elements behind transparent parts of other windows.
+    - Fixed display panels not drawing text correctly at larger GUI scales.
+    - Fixed that fast-transfer of ghost modules did not work for out of reach entities.
+    - Fixed that trains with the same stop in their schedule would not move between stops even if the one it is waiting at is disabled.
+    - Fixed decider combinator GUI signals tables getting squashed too much when there are a lot of conditions/outputs.
+    - Fixed intro sound not respecting music-muted and master-muted settings.
+    - Fixed overbuilding ghost with module requests with physical entity of different quality would not retain the module requests.
+    - Fixed normal building underground belts and pipes in remote view would deconstruct rocks, trees and cliffs.
+    - Fixed normal building underground belts and pipes in remote view would have missing tiles autofilled.
+    - Fixed crash in latency when upgrading ghost of elevated rails to different quality
+    - Fixed crash when car would collide with 0 health entity in latency
+    - Fixed finish game achievements showing as obtainable on saves that has already finished the game
+    - Fixed splash screen progress bar size not scaling with the UI.
+    - Fixed that the can't-reach wire sprite would get drawn under some entities.
+    - Fixed that the chart drag hotkey did not work.
+    - Fixed a crash when a tile cannot be placed due to a missing foundation with default not given.
+    - Fixed rail signal selection box when selection box is off-center.
+    - Fixed that beacon fast-replace would allow modules the beacon did not accept.
+    - Fixed that water cane had the wrong icon.
+    - Fixed that building vehicles with pre-configured equipment grids did not always work correctly.
+    - Fixed another bug related to smart underground belt building.
+    - Fixed parametrisation into requests which would lead into duplicate requests wasn't handled.
+    - Fixed that personal lasers would be offset incorrectly while having a tesla gun equipped.
+    - Fixed ghosts of non-blueprintable entities being ghost-buildable in normal mode (e.g. in remote view).
+    - Fixed missing blueprint parametrisation number context for ticks waiting in station schedule condition.
+    - Fixed that the infinity cargo wagon showed in Factoriopedia.
+    - Fixed a graphics artifact when drawing ghost rocket silos.
+    - Fixed nauvis_uranium_processing menu simulation not loading properly in the demo.
+    - Fixed a crash when upgrading underground belts manually through remote view.
+    - Fixed extra spidertron ghost being created when ghost-building spidertron snapped to existing spidertron ghost
+    - Fixed deconstruction planner would not respect deconstruction alternatives when they were inside of entity ghost.
+    - Fixed equipment grid ghost interaction for entities that move in some cases.
+    - Fixed a crash when named logistic sections are removed when entities are removed due to mod removal.
+    - Fixed that finite infinite levels would show wrong in the technology GUI in some cases.
+    - Fixed that display panel text wasn't parametrisable by blueprint parametrisation.
+    - Fixed that switching to remote view while shooting would keep shooting.
+    - Fixed consistency issue related to downgrading blueprints that contain assemblers that when downgraded can no longer craft the recipe.
+    - Fixed trains station tutorial would crash when adding a schedule record.
+    - Fixed migrating logistic containers into storage chest could leave them inconsistent.
+    - Fixed a crash related to drag building ghost belts and script reviving entities.
+    - Fixed a crash when upgrade-reviving ghost entities that have gui open.
+    - Fixed a proxy container attached to mining drill module inventory would not wake up inserters when modules are inserted or removed.
+    - Fixed display panel text was not showing up on screenshots.
+    - Fixed selector combinator gui was showing input value in the output count signal slot.
+    - Fixed following robots lifetime modifier was not working with fractions.
+    - Fixed items on splitters were changing sides when rotating.
+    - Fixed decider combinator gui conditions highlighting.
+    - Fixed blueprints being able to rotate entites that are not rotatable based on their prototypes
+    - Fixed that blueprint building parametrisation gui didn't accept unit postfixes and formulas.
+    - Fixed that blueprint parametrisation number value edit didn't accept unit postfixes and formulas.
+    - Fixed wire distance checks when entity uses rotated selection boxes.
+    - Fixed deconstruction planner with quality entities selected would not show quality on the icon.
+    - Fixed that blueprint parametrisation was able to change number in a storage chest filter.
+    - Added more context to blueprint parameters in trains.
+    - Fixed pipe connection sprites of some machines not working together with storage tanks and pumps.
+    - Fixed tooltip for recipe parameters to not show "made in".
+    - Fixed lamps with color set by control behavior would not use color for one tick after loading a save.
+    - Fixed cutscenes would reset player zoom level when finishing.
+    - Fixed some tooltip lines would clip outside the tooltip frame.
+    - Fixed that the character would keep mining when entering remote view.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.32
+  Minor Features:
+    - Added mouse sensitivity setting
+  Changes:
+    - Disabled achievements "It stinks and they don't like it", "It stinks and they do like it", and "Get off my lawn" in peaceful mode and no enemies mode.
+  Optimizations:
+    - Improved performance when removing roboports in large active networks by 60%.
+  Bugfixes:
+    - Fixed building and shooting actions missing vibrations.
+    - Fixed a crash when writing LuaItem::entity_filters.
+    - Fixed that blueprint preview rendering did not work correctly.
+    - Fixed a crash with positional GuiEffect sounds with aggregation when dedicated UI sound resources were exhausted.
+    - Fixed upgraded blueprint entities would have their flip reverted
+    - Fixed worm shooting at fast moving target sometimes created multiple acid puddles with single spit and even outside of its range.
+    - Fixed that labs could try to research trigger based technologies.
+    - Fixed LuaEntity::get_logistic_sections was not always working with entity ghosts.
+    - Fixed selector combinator was using wrong open and close sounds.
+    - Fixed remote item requests leaving a visual deconstruction/ghost mark when inserters interacted with the slot.
+    - Fixed issue related to rendering items on belts when a belt was also rendered through a camera widget.
+    - Fixed that assembler input slots could exceed stack limits.
+    - Fixed a crash in assembling machine GUI when the output was full and a recipe containing a research progress product was being crafted.
+    - Fixed mouse cursor showing up when exiting Steam Big Picture in controller input method.
+    - Fixed belts under elevated rails were not being removed when building a pair of undergrounds.
+    - Fixed that inserters could grab items from belts that crafting machines no longer wanted.
+    - Fixed taking screenshot could crash in some cases.
+    - Fixed that select list background drawing was incorrect for the first row.
+    - Fixed that inventory rendering did not work correctly if part of it was off the left or right side of the screen.
+    - Fixed that reset technology effects would clear in-progress research triggers.
+    - Fixed that writing "nil" to storage_filter did not work correctly.
+    - Fixed that UI sounds would not play when dedicated UI sound resources were exhausted.
+    - Fixed display panel text and player names were not covered by onboard rocket/cargo pod flight cutscene.
+    - Fixed that upgrading pairs of underground belts could transform one end of the belt.
+    - Fixed upgrading a blueprint could fail to upgrade preview icons if the upgrade only changed quality.
+    - Fixed that on_equipment_removed did not fire for robots removing equipment.
+    - Fixed that some hidden items would show in Factoriopedia.
+    - Fixed that Sound::audible_distance_modifier and SoundPrototype::audible_distance_modifier would be effectively applied twice.
+    - Fixed that loading old save files created from a freeplay custom scenario would not load because of outdated scripts.
+    - Fixed trunk of a specific tree flickered when moving while zoomed out.
+    - Fixed "Open character logistics/info/crafting" hotkeys sometimes not closing the character gui.
+    - Fixed a desync related to cliffs and deleting multiple chunks in the same tick.
+    - Don't auto-focus blueprint parameter fields when using a controller.
+    - Fixed a crash when interacting with GUIs while auto-save runs.
+    - Fixed that player.render_mode didn't report chart_zoomed_in for the remote controller.
+    - Fixed crash when clicking a shortcut rich text link.
+    - Fixed BP of storage chest with filters would be incorectly overbuilt over non-storage logistic chests
+    - Fixed a crash when building entities with linked pipe connections in multiplayer latency.
+    - Fixed that map rendering would wrongly show your player as on the map when paused.
+    - Fixed an audible click at certain zoom levels when playing positional sounds with custom zoom attenuation and aggregation.
+    - Fixed offshore pump underwater patch was not rendered under water.
+    - Fixed issue where plants were not being destroyed when (super)force building entities that autofill tiles that collide with them
+    - Fixed loading of scenarios when entities were configured with difficulty settings.
+    - Fixed biters and pentapods getting frozen mid-attack.
+    - Fixed infinity container parametrization could set empty filters causing crash on saving.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.30
+  Minor Features:
+    - Added smart pipette for items on the ground.
+  Bugfixes:
+    - Possibly fixed crash related to disconnecting controllers.
+    - Fixed incorrect text being entered when typing with a USB keyboard in mouse and keyboard mode.
+    - Fixed that chat links could be selected when using the on-screen keyboard.
+    - Fixed crash when connecting to multiplayer game hosting a custom scenario.
+    - Fixed crash when trying to edit a textbox with more than 500 characters.
+    - Fixed that item request proxies would show bad "missing materials for construction" counts.
+    - Fixed a crash when creating a ghost assembling machine with a pre-set recipe through script.
+    - Fixed a multiplayer latency related crash when deleting surfaces.
+    - Fixed crash due to division by zero when line_length of sheet definition of SpriteVariations was 0.
+    - Fixed ammo turrets with target leading would undershoot ammo with range modifier.
+    - Fixed opening a train stop on another surface from a tag would show the wrong trains.
+    - Fixed only pings from last message in a given tick were being recognized.
+    - Fixed circuit condition signal selection title was "Set the filter" instead of "Select a signal".
+    - Fixed a crash when interacting with ghost assembling machines after migrating recipes.
+    - Fixed crash when using the same sprite as both decal and decorative.
+    - Fixed that logistic groups could get broken when mining and un-doing ghost logistic containers.
+    - Fixed long custom ending text would not fit in the victory screen.
+    - Fixed that hidden surfaces would show in the evolution command.
+    - Fixed a crash when hovering some widgets at very small resolutions.
+    - Fixed a crash when quitting abnormally in multiplayer while the menu was visible.
+    - Fixed that labs would consume power for one tick when not working.
+    - Fixed crash when frame count of animation layer definition using stripes didn't match frame count of previous layer.
+    - Fixed hovering cursor over undo button could change rail planner start location.
+    - Fixed missing Ў character in the game font.
+    - Fixed yet another issue with flow statistics.
+    - Fixed script rendering objects targeting an entity didn't draw at render position of the entity.
+    - Fixed issue of incorrect undo of deconstruction of multiple tile ghost with common dependent entity ghost
+    - Fixed that items would end up in crafing machine trash slots when it wasn't desired.
+    - Fixed that deleting a surface with global electric network would leak an electric network.
+    - Fixed blueprint could be configured with invalid set of grid size and absolute grid position.
+    - Fixed that instant blueprint over-building would not auto fulfill item requests.
+    - Fixed statistics would not include values from a newest sample that is still being created.
+    - Fixed an issue with memory management in some cases when rotating entities.
+    - Fixed that hidden mining drills would still show in "mined by" in resource tooltips.
+    - Fixed that the artillery wagon auto-targeting checkbox was not shown when the artillery had an equipment grid.
+    - Fixed LuaTransportLine::get_line_item_position would return incorrect positions.
+    - Fixed that writing to LuaPlayer::opened did not update the GUI in multiplayer.
+    - Fixed pumps were setting filter when given negative fluid signals.
+    - Fixed a crash related to merging forces and gui.
+    - Fixed trains could switch to manual when due to interrupts the schedule became empty.
+    - Fixed math expressions were not accepting numbers with positive exponent and + sign.
+    - Fixed a desync related to worker robots charging when force has worker robot battery bonus set.
+    - Fixed that changing surface::localised_name did not update the surfaces list in remote view.
+    - Fixed that quality could add a supply area to an electric pole without one.
+    - Fixed that the LAN games browser would not show anything if the public-games filter was set to only show favorites.
+    - Fixed arithmetic combinator gui not refreshing circuit network selection when combinator parameters are changed externally.
+    - Fixed copy source was cleared when source entity was built from ghost or destroyed leaving ghost.
+    - Fixed that some actions would still be processed while the game was paused.
+    - Fixed a latency armor related crash.
+    - Fixed that some remote view GUI elements did not align correctly.
+    - Fixed that the blueprint GUI didn't render vehicles correctly.
+    - Fixed that changing loader direction through script could cause transport lines to become inconsistent.
+    - Fixed that map pipeline rendering would show other forces pipes.
+    - Fixed that pipette over tiles would always override other actions bound to the same hotkey.
+    - Fixed that vehicles would get stuck as 'reserved by remote driver' if they died while being remote driven.
+    - Fixed inserters would keep using filters after migration when new prototypes disallowed usage of filters.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.28
+  Minor Features:
+    - Added radar minimap visualization for roboports and cargo landing pads.
+    - Re-added the sandbox scenario questionnaire.
+  Changes:
+    - Inserters (especially ghost long handed ones) spawn in stretched to an appropriate distance.
+    - Reverted fix for god controller being able to zoom out to map view.
+    - Changed selector combinator circuit wire reach to be the same as wire reach of other combinators.
+    - Tweaked how entities are selected in remote view when using a gamepad. The entity directly under the crosshair is much more likely to be selected.
+    - Added detailed description to Factoriopedia for Blueprint, Blueprint book, Deconstruction item and Upgrade item.
+  Graphics:
+    - Changed the Rocket part icon to look more like a part of the rocket.
+  Bugfixes:
+    - Fixed a crash when copying logistic filters into blueprints.
+    - Fixed that Factoriopedia would close if a GUI behind it was changed.
+    - Fixed a crash when drawing EntityButtons with entities with inverted selection boxes.
+    - Fixed that pumps would run endlessly if the input fluid was incompatible.
+    - Fixed station list could be sometimes sorted incorrectly.
+    - Fixed trashing logic would not run after cancelling deconstruction of entity.
+    - Fixed reverting technologies with recipe unlocks would lock recipe that is still unlocked by other technology.
+    - Fixed that logistic network content tooltips didn't show nice numbers.
+    - Fixed blueprint export to string would create malformed blueprint if it contained decider combinator with empty conditions or empty output.
+    - Fixed consistency issue when power switch was destroyed leaving a ghost.
+    - Fixed inserters could in some cases interact with elevated cargo wagons.
+    - Fixed research was not correctly counted in total item production statistics.
+    - Fixed rocket silo control behavior would not update outputs when connecting wire.
+    - Fixed that fast-replacing crafting machines would not preserve the mirrored orientation of the original machine.
+    - Fixed that burner inserters would load too much fuel when fed by inserters.
+    - Fixed nuclear power achievement could be obtained without burning uranium fuel cell if it was consumed for crafting.
+    - Fixed that clicking the sort buttons in the save-map GUI would reset the save name field.
+    - Fixed flamethrower turret sound still playing after being deactivated or destroyed with its ghost created.
+    - Fixed cars and tanks would keep their speed through a ghost when dying.
+    - Fixed fluid parameters were not showing when selecting fluids for wait condition.
+    - Fixed deconstruction planner would not mark rails for deconstruction if they were dependency of a rail support that was instantly removed.
+    - Fixed cargo pods with passenger would select landing spots using incorrect bounding box.
+    - Fixed blueprint parametrization would allow selecting hidden recipe that can be crafted.
+    - Fixed a crash when trying to set infinity chest filter with non zero count but empty name.
+    - Fixed a crash when super force building blueprint with belts and external wires in latency.
+    - Fixed that assemblers without fluid boxes were incorrectly considered rotatable.
+    - Fixed burner energy source would not report out of fuel when incompatible items were in the fuel inventory.
+    - Fixed that some damage tooltips were incorrect.
+    - Fixed that any tag being changed would refresh any active tag-edit GUI.
+    - Fixed many smaller GUIs still not supporting non-English search
+    - Fixed copying display panel would copy icon and text regardless of control behavior being active.
+    - Fixed nuclear reactor was heating tiles farther than it would heat entities.
+    - Fixed that changing "send to orbit automatically" on rocket silos did not work when in ghost form.
+    - Fixed electric network statistics could show total value that was larger than expected caused by counting incomplete next sample.
+    - Fixed that importing save files in the map editor would crash the game.
+    - Fixed current research tooltip would show incorrect progress values.
+    - Fixed a desync related to building rails with rail planner in latency.
+    - Fixed a crash when the last roboport is disconnected while searching in Logistic networks GUI.
+    - Fixed that items could be inserted into rocket inventory while the silo was in "automatic requests" mode.
+    - Fixed that downgrading an entity ghost didn't remove invalid item insertion requests.
+    - Fixed that robots could enter roboports marked for deconstruction.
+    - Fixed pipes and pipe shadow graphics on flipped biochamber.
+    - Fixed that ghost building electric poles did not always space them correctly.
+    - Fixed a crash when a robot tried to move in the same tick as it was deactivated by script.
+    - Fixed a crash when reordering time-based wait conditions in multiplayer.
+    - Fixed that players with open blueprint creation GUI were unable to open menu when the game was paused.
+    - Fixed parametrization of selector combinator would propose variables not relevant due to current mode.
+    - Fixed parametrization was not covering inserter, assembler and reactor signals.
+    - Fixed a dying turret could be disabled by control behavior causing it not able to finish dead animation.
+    - Fixed a desync when changing force friends/ceasefire.
+    - Fixed trying to parametrize inserter stack size would clamp them to max stack size of neutral force.
+    - Fixed construction robots from the personal roboport being stuck in a loop when fulfilling delivery requests for construction robots.
+    - Fixed that stack inserters could deadlock in some cases.
+    - Fixed shortcut bar GUI clipping off screen in remote view.
+    - Fixed long logistic group name pushing delete button out of view.
+    - Fixed rocket silo in "automatic requests" mode not trashing spoiled items.
+    - Fixed assemblers with parameter recipe would not flip correctly.
+    - Fixed building rails in some cases could attempt to build them in wrong order causing a build attempt to be performed before a required support was built.
+    - Fixed bonus from research of character health is now showing in factoriopedia.
+    - Fixed that the pump would lose its filter when fast-replaced.
+    - Fixed setting generate_map in SimulationDefinition would not allow to have map generated in simulations.
+    - Fixed pipette of hazard concrete tiles would not set correct build direction.
+    - Fixed control settings menu sometimes growing in size when interacting with it.
+    - Fixed a crash when building terrain in remote view.
+    - Fixed that layered quality icons did not work correctly in recipe overlays.
+    - Fixed that "hidden in factoriopedia" technologies still showed in Factoriopedia.
+    - Fixed a performance issue when rendering radar minimap visualization.
+    - Fixed a crash when clicking give-item technology modifiers in the technology GUI.
+    - Fixed that a robot wouldn't play a tile mined_sound when deconstructing it.
+    - Fixed that a robot would play a deconstruct sound regardless of whether the deconstruction succeeded or not.
+    - Fixed a consistency issue related to loading script rendered animations when animation is no longer available.
+    - Fixed that the personal logistics area would render incorrectly when the game was paused.
+    - Fixed that the open-factoriopedia hotkey did not work in some cases.
+    - Fixed that fog of war was not rendered while dead.
+    - Fixed that opening the technology GUI while dragging the map would continue to drag the map.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.23
+  Major Features:
+    - New rail shapes, rail curves, 22.5 degree tracks.
+    - Added Train interrupts (https://factorio.com/blog/post/fff-389, https://factorio.com/blog/post/fff-395)
+      Trains can have number of interrupts, each interrupt has conditions and set of stops.
+      Whenever is the train leaving a station, the first interrupt with fulfilled condition is activated, which adds its stations
+      as temporary items into the schedule.
+    - Added Train groups. (https://factorio.com/blog/post/fff-389)
+      Train name is editable and trains with the same name are considered to be in the same group.
+      Editing schedule of a train automatically updates schedules of all the trains in the same group.
+    - Added Logistic groups. (https://factorio.com/blog/post/fff-382)
+      Logistic group is editable for logistic points (Requester chest, Roboport, Character, Spidertron, etc.).
+      Editing the requests of a logistic point automatically updates requests of all the points in the same group.
+    - Added Factoriopedia. (https://factorio.com/blog/post/fff-397)
+      It provides detailed information about different kind of objects.
+      ZL+ZR+Selecting any relevant gui element or game entity opens the related page.
+    - Forced building will now automatically adds missing landfill or other other tiles based on context.
+    - Added super forced building mode. ZL + ZR + Build marks for deconstruction player's colliding entities and replaces ghosts and tiles. (https://factorio.com/blog/post/fff-383)
+    - Added search to the remote view. It allows to do surface wide search for recipe production, resources and train stations and map tags. (https://factorio.com/blog/post/fff-400)
+    - Blueprint parametrisation. Allows to make more generic bluprints, which are configured upon building. (https://factorio.com/blog/post/fff-392)
+  Features:
+    - Rail planner is usable in the map (remote view). (https://factorio.com/blog/post/fff-403)
+    - Added smart dragging of underground belts and pipes.
+    - Added a toggle to show pipelines on the map.
+    - Added the option to pin positions, entities, alerts or search results, and keep track of their location. (https://factorio.com/blog/post/fff-400)
+    - Entity ghosts are now buildable on water if the landfill ghosts are already there.
+    - Added a third graph to the electric network overview to track the charges of accumulators over time. (https://factorio.com/blog/post/fff-408)
+    - Added a new alert for construction and logistic robots that can't find free space in a roboport.
+    - Added a new alert for trains failing to pathfind to their target. (https://factorio.com/blog/post/fff-395)
+    - Added a new alert for turrets running out of ammunition. It only sounds once right when the ammo is used up.
+    - Added fuel condition to the train schedule.
+    - Added condition to the train schedule to check whether a specific station is full or not.
+    - Added an option for a locomotive to update its color automatically based on the color of the target train stop. (https://factorio.com/blog/post/fff-389)
+    - Smarter worker robot scheduling.
+      Worker robots have task queue now which allows the planner to choose the robot that will be able
+      to get to the destination fastest, even if it is doing something else at the moment.
+    - Robot requests in roboports.
+    - Added Flipping as a primary action to flip entities horizontally or vertically. Works on items in hand
+      placed on the surface or ghosts. AssemblingMachines can now be mirrored by flipping them, allowing
+      additional fluid box configurations.
+    - Upgrade planner can install new modules into machines, this is done by leaving the source slot empty
+      and setting up only the destination slot.
+    - Upgrade planner module upgrade/install can have machine filter and maximum count per machine specified.
+    - Upgrade planner now has dynamic size, similar to the blueprint library. The size is capped at 250 rows now.
+    - Added a way to create module/fuel requests in entities remotely by selecting with ghost item in hand. (https://factorio.com/blog/post/fff-380)
+    - All turrets (except for artillery) can now be configured individually to prioritize certain types of enemies when looking for targets. (https://factorio.com/blog/post/fff-410)
+      The priority settings can be copy-pasted between the different turret types and can be configured through the circuit network.
+    - Added latency hiding for cars (and tanks).
+    - Rocket silos continue producing parts for the next rocket while the current rocket is being launched. Completing another rocket soon enough skips closing and reopening the doors. (https://factorio.com/blog/post/fff-405)
+    - Improved the way spidertrons are remotely controlled.
+      Instead of spidertron remote being linked to single spidertron, it can be used to group select and command spidertrons like in your typical RTS game.
+    - Spidertrons can be entered remotely, so you can control them as if you were inside physically, so switching the map on/off doesn't distrubt the mode.
+    - Allowed opening and configuring entities through remote view. (https://factorio.com/blog/post/fff-380)
+    - When imported blueprint is placed, assembling machines will be configured with the recipe even when recipe is not yet researched.
+    - Added flying text for more cases of unsuccessful resource mining.
+  Ease of use:
+    - Added green indicator (instead of yellow), when previewing underground belt/pipe on its maximal distance. (https://factorio.com/blog/post/fff-388)
+  Circuit Network:
+    - Added selector combinator. It allows to select one of the signals, or the signal count from an input.
+    - Added editable description to combinator entities.
+    - Decider Combinators are now allowed to check multiple conditions and send multiple outputs per combinator.
+    - Arithmetic combinator now allows to select red and green networks for input signals and perform Each-Each operations.
+    - Signal pipetting.
+    - Added display panel. 1X1 entity which can show specified icon and/or text, possibly also on the map. It can be also controlled by the circuit network. (https://factorio.com/blog/post/fff-419)
+    - Transport belt connected to a circuit network can now read contents of the whole segment instead of just the one tile. (https://factorio.com/blog/post/fff-405)
+    - Roboports can read logistic network contents and requests. (https://factorio.com/blog/post/fff-428)
+    - Roboports can output the number of roboports in the logistic network to the circuit network. (https://factorio.com/blog/post/fff-428)
+    - Logistic Chests have an optional circuit condition to enable / disable their connection to the network. (https://factorio.com/blog/post/fff-428)
+    - Rocket silo is connectable to circuit network, and allows to read its contents.
+    - All turrets (including artillery) can now be connected to the circuit network to read their current ammo count and/or deactivate them. (https://factorio.com/blog/post/fff-410)
+    - Assembling machines, chemical plants, oil refineries and centrifuges can now send the ingredient list of their recipes to the circuit network.
+    - Drag building electric poles will also drag circuit wires when starting from electric pole with already connected circuit wires.
+    - When electric pole is removed, it will rewire circuit wires similar to copper wires.
+    - Cut/copy pasting blueprint with external circuit wire connections will preserve these connections when the blueprint is built (if possible). (https://factorio.com/blog/post/fff-402)
+    - Radar can now be connected to circuit network, allowing to wirelessly transmit a single channel of red and green signals on each planet/surface. (https://factorio.com/blog/post/fff-402)
+    - Added a way to read nuclear reactor temperature through the circuit network. (https://factorio.com/blog/post/fff-428)
+  Minor Features:
+    - Added "No enemies" setting that disables enemy unit spawning from enemy spawners, map gen, and items. Does not disable enemy spawners.
+    - Upgrade planner can upgrade fuel in blueprints (yet to be implemented for existing entities).
+    - Added cargo pods that move items from platforms to landing pads.
+    - Undo improvements. Undo actions older than 1 minute require confirmation +flying text notification of what was undone.
+    - Added redo.
+    - Allow undoing of module changes done via upgrade planner.
+    - Allow undoing of copy-pasting entity settings like assembler recipes or inserter filters. (https://factorio.com/blog/post/fff-412)
+    - Allowed lamps color to be configured manually.
+    - Manual building in latency state now tracks used items.
+    - Manual building previews will now highlight ghosts that would be removed.
+    - Blueprints with entities and landfill are now quickly buildable over water.
+    - Added icons for tileable blueprints, like "Curve, Corner, T junction, X junction" and similar, in Virtual signals category.
+    - Evolution factors are now tracked individually for each surface.
+    - Pumps now can have a fluid filter. If present, only the specified fluid is taken from the pump's source.
+    - Electric poles are no longer limited to 5 copper connections to other electric poles.
+    - Removed some of the abstract items (red wire, green wire, discharge defense, artillery remote, spidertron remote) and replaced them with shortcut bar tools which can be used anytime for free. (https://factorio.com/blog/post/fff-379)
+      These tools can still be placed into the quickbar if desired.
+    - The smart pipette can also pick terrain and using it on fluid select the offshore pump.
+    - The smart pipette can also pick items from crafting, logistic, select list, inventory and quickbar.
+    - Disabling train stop no longer sends ongoing trains away. Disabled train stop is now considered full and trains will not skip schedule records.
+    - Map tags can be moved.
+    - Map tags can be quickly copied using pipette.
+    - Map tags and pings can be placed while zoomed in to game view.
+    - Spidertrons can be damaged by cars and tanks, can be damaged by walking on fire, and can be slowed with slowdown capsules.
+    - Switching to the map editor using /editor now places the player at the position they were looking at in remote view. Switching out of the map editor returns the character to the position it was when entering.
+      Added editor options to individually revert these changes to their previous behavior.
+    - Numerical textfields accepts values with postfix formats (10k instead of 10000 etc), simple math expressions, like 3*7+7k are also possible.
+    - Added logic to hide previews for buildable items if fast-transfer modifiers (default: Ctrl) are pressed. Doesn't apply to blueprints or when rail planner is active.
+    - Improved the AI of the worker flying robots when it comes to choosing roboport to recharge.
+      It prefers roboports closer to its destination, so (for example) it won't get stuck over lakes forever.
+    - When you retrieve your corpse, the logistic requests will re-enable if they were enabled before death.
+      (Related to the already existing behaviour, where the requests are disabled upon death, to avoid unwanted supply)
+    - Added an option to auto-pause servers while any player is connecting (defaults to false).
+    - Added several new achievements.
+    - When renaming a train stop, it will try to copy its color from an existing stop with that name.
+    - Added control inputs to adjust blueprint grid alignment.
+    - Train stop can be given a priority, trains will prefer going to the train stop with higher priority and it will be easier for them to depart from such train stop. (https://factorio.com/blog/post/fff-395)
+    - Allow copy-pasting of setting for trains and train stops while in chart view. (https://factorio.com/blog/post/fff-403)
+    - Crafting machines can craft more than 1 recipe per tick if their speeds are fast enough.
+    - Trains with non-empty schedule are automatically switched into automated mode upon completition.
+    - The spidertron inventory is automatically sorted.
+    - Added a browse history feature. Can go back and forth through what was opened. (https://factorio.com/blog/post/fff-397)
+    - Added 8 directional arrows to virtual signals. Also added red cross signal next to the checkmark.
+    - Added a super forced mode for deconstruction planner: when selecting area while holding ZL + ZR (by default) deconstructs everything (deconstructible and not filtered out), i.e. entities, tiles and hidden tiles
+    - Added a reverse mode for deconstruction planner: when selecting an area, the white-/blacklist setting for entity and tile filters will be reversed for this selection.
+    - Added a nondefault tile cover cache - last used cover tile is being saved per surface per force per tile id being covered. For most intents and purposes, those values act the same as default covers defined by covered tile prototype (for tiles without default cover defined).
+    - The storage filter of logistic storage chests can now be copy-pasted.
+    - Assemblers circuit allows to choose if items in crafting should be included by read contents.
+    - Added drag-to-reorder to the research queue.
+    - Added gamepad stick sensitivity setting for map movement.
+    - Search is now case and accent insensitive for all official languages.
+    - Cars and tanks will auto-refuel.
+    - Statistic GUI precision is preserved across instances.
+  Optimizations:
+    - Added automatic splitting of repeated noise expressions into separate procedures which increased map generation speed.
+    - Improved C++ structure of noise expressions which reduced game start-up time and MapGenSettings compilation time.
+    - Improved worker robot performance, they are not updated every tick when moving or stationary anymore. (https://factorio.com/blog/post/fff-421)
+    - Improved performance of idle roboports. (https://factorio.com/blog/post/fff-421)
+    - Improved radar charting speed. (https://factorio.com/blog/post/fff-421)
+    - Improved circuit network logic by making it fully multithreaded.
+    - Changed Spidertron walking strategy to deliberately alternate legs and be overall more efficient and performant.
+    - Changed train wait condition evaluation order to check 'cheap' conditions (e.g. wait time) before 'expensive' conditions (e.g. inventory) within a set of "and"-connected conditions.
+    - Improved performance of technology GUI when viewing only essential technologies.
+  Graphics:
+    - Changed night vision effect from grayscale to a more contrasty one.
+    - Reworked fire animations, improved quality and increased resolution.
+    - Reworked rocket projectile animations
+    - Fixed copper and circuit wires appearing to sag below the perceived ground level.
+    - Fixed copper and circuit wire shadows projecting onto the ground incorrectly.
+  Sounds:
+    - Improved sounds of dying enemies.
+    - Added different sounds for manipulating different items in the inventory and opening different entities. (https://factorio.com/blog/post/fff-396)
+    - Added different sounds for shooting different kind of targets.
+    - Added ambient sounds. (https://factorio.com/blog/post/fff-396)
+    - Added semi-persistent ambient sounds.
+    - Added support for sound accents for entities' working_sound. These are short sounds which play at a specific moment in the entity's animation.
+    - Added support for multiple main sounds for entities' working_sound.
+    - Extended support for aggregation to most sounds.
+    - Added controls to skip current music track, go back to previous one and to pause/resume music.
+    - Added variable music. (https://factorio.com/blog/post/fff-407)
+  Balancing:
+    - Diminishing return of beacons effect (https://factorio.com/blog/post/fff-409)
+    - Lowered Fluid pumping speed from 12 000 to 1 200.
+    - Altered the mining drill bounding box, so you can walk between mining drill and substation and such.
+    - Lowered stack size of ammo from 200 to 100.
+    - Increased fluid wagon capacity from 25000 to 50000 to make fluid wagons more compelling compared to the new pipe mechanics.
+    - Increased low density structure stack size from 10 to 50.
+    - Increased beacon stack size from 10 to 20.
+    - Biter spawner health grows with evolution, up to 10 times with maximum evolution.
+    - Increased health of bigger worms, and added a laser resistance to them.
+    - Removed the 15% explosion damage resistance from biter spawners.
+    - Doubled the damage of artillery.
+    - Nerfed personal laser defense damage output to 1/3 its previous output.
+    - Changed all module-3 recipe to require only 4 (instead of 5) module-2 ingredients.
+    - Greatly increased default tile pollution absorption.
+    - Increased rocket fuel stack size from 10 to 20.
+    - Decreased the crafting time of rocket ingredients.
+    - Decreased the crafting time of solid fuel.
+    - Increased damage and range of non-explosive cannon shells.
+    - Doubled the distractor robot health from 90 to 180 and life time from 45s to 90s.
+    - Increased destroyer robot base damage from 10 to 20 and range from 15 to 20.
+    - Increased damage of shotgun pellets from 5 to 8, and made shotgun projectiles spawn closer to the player.
+    - Increased battery capacity of construction robot from 1.5MJ to 3MJ.
+    - Rocket (ammo) no longer requires an electronic circuit to be crafted.
+    - Rocket and Explosive rocket projectiles accelerate twice as fast.
+    - Changed the rocket recipe to require only processing unit instead of rocket control unit. Rocket control unit was removed from the game.
+  Changes:
+    - Reworked the fluid system flow logic. (https://factorio.com/blog/post/fff-416)
+      Contiguous sections of pipes and storage tanks are merged into segments.
+      Each segment contains a single fluid, and throughput is proportional to how full a segment is.
+    - Removed Filter and Stack filter inserter, instead all inserters can use filters now.
+    - Character corpses no longer despawn.
+    - Merged zoom controls and removed functionality to zoom in without leaving chart view.
+    - Kovarex enrichment process is now unlocked by automation, logistic and chemical science pack only.
+    - Power armor equipment grid resized from 7x7 to 6x8 to be a bit more practical.
+    - Power switch and Programmable speaker stack size reduced from 50 to 10.
+    - Big and huge rock doesn't drop stone items when destroyed anymore.
+    - 1 Water will now produce 10 Steam in boilers/heat exchangers.
+    - Boilers will respect conservation of energy by considering heat capacity of input and output fluids.
+    - Removed the "fuzzy search" setting.
+    - Smart belt building was slightly improved, so it makes the underground also when overbuilding belt gap with belts already present on both sides.
+    - Trains will not skip stations that do not have any valid stops, they will 'no path' instead.
+    - Trains with artillery wagons now need to wait for all cannons to be in fully their parked position before departing.
+      When driving manually, keep holding accelerate to command the artillery to stop firing and assume their parked position.
+    - Added event-based technologies for unlocks related to the early game.
+    - Added event-based technologies to only allow to research the oil related and uranium related technologies after the related resource had been mined.
+    - Switching to map view switches to remote controller now, which allows to open and setup entities even when they are far away.
+    - Chunks under fog of war are covered even in normal view.
+    - Default train connect key is now J, train disconnect key is now K and vertical flip is now V.
+    - Allowed electric poles to be fast-replaced by moving.
+    - Allowed entity ghost-building over tile ghosts.
+    - Allowed landfill mining.
+    - Underground belts and pipes-to-ground connections can be blocked by certain tiles.
+    - Disabled loading of saves before 1.0.0 version (You can use 1.1 to load older saves and re-save them).
+    - Changed the /evolution command to respect the now Surface-based evolution tracking. Provide a Surface's name as parameter to get its evolution factor, or leave blank to get a full list.
+    - Locomotive fuel inventory is now accesible by inserters, so it can be unloaded automatically.
+    - Changed module limitations for recipes from item-based to effect-based. A module can't be placed into a machine if the current recipe doesn't support one of the effects.
+    - Changed "use item" (grenades, artillery remote, capsules) to its own control and changed the default to right mouse button.
+    - Improved heuristic of robots selecting roboports to charge/station.
+    - Changed selection logic of entity ghosts. They now behave as if they were real entities already.
+    - Car collisions impact on speed reworked (destroying obstacles now slows the car less than before).
+    - Added one more color to robot overview on the map (red = logistic robots targeted to me, to deliver or to trash).
+    - Ghost pipes are now connecting to other pipes.
+    - When train has no fuel, player can manually move the train slowly when it is manually controlled. (https://factorio.com/blog/post/fff-403)
+    - Increased Big electric pole maximum wire reach from 30 to 32.
+    - Electric poles are always crafted from copper wire instead of copper plates.
+    - Removed sandbox scenario.
+    - Tweaked most of the tips trigger and skip trigger logic, added new tips. Added the ability to show animated UI related tips.
+    - MapTick is now 64 bit.
+    - Disabled the turret shooting alert by default.
+    - Remnants of destroyed player buildings do not disappear after a while any more.
+    - Increased the number of chunks generated around players based on the maximum view distance.
+    - Changed pipe to ground collision mask so player can walk on top of it.
+    - Using the pipette on an entity marked for upgrading now picks the result of the upgrade instead of the existing entity.
+    - Rotating (and flipping) already built entities is now allowed at any distance.
+    - Added linear interpolation method (used by default now) for audio resampling when playback speed is changed.
+    - Added an option to disable animated ghosts to aid performance on integrated GPUs.
+    - Jelly is no longer mined from Slipstack trees so it is less confusing where to get jelly from.
+    - Removed "Select previous technology" control which didn't work (replaced with the generic back/forward navigation in 2.0).
+    - Updated shortcut icons and increased their size to 56px.
+    - Reviving container ghosts no longer puts colliding items on the ground into the resulting container.
+    - Fluid mixing will prefer the fluid with more volume and discard the other.
+    - Increased spidertron walking sound volume.
+    - Using the "craft all" hotkey on free recipes queues 1 stack of the results.
+  Gui:
+    - Added Players screen (accessible from the side menu), where each of the player can be inspected. (https://factorio.com/blog/post/fff-423)
+    - Added drag to rearrange logistic requests within a section.
+    - Changed spidertron gui to have 3 panels instead of two when the flat character gui settings is selected.
+    - The spidertron grid is opened by a button instead of a tab.
+    - Improved the tooltips of graphs, to actually explain what is the relationship of the two numbers displayed.
+    - Production and electric network graphs now highlight the corresponding line if an item's slot is hovered in the list below.
+    - Fixed technology graph UI not properly scaling with UI scale.
+    - Restructured all the circuit condition windows.
+    - Circuit and logistics condition windows can be opened at the same time.
+    - New logistic networks GUI. (https://factorio.com/blog/post/fff-405)
+    - The trains stop gui contains a list of trains on the way to this stop (https://factorio.com/blog/post/fff-403).
+    - Added a notification of researched technology.
+    - Research widget has a tooltip which shows the research production graph for the last 10 minutes. (https://factorio.com/blog/post/fff-423)
+    - Alert gui now allows specific selection of the problem we want to move to. (https://factorio.com/blog/post/fff-400)
+    - Circuit conditions for trains now show precise progress in the GUI if it makes sense for the condition.
+    - Changed sorting of technologies in technology list to put infinite technologies at the back.
+    - The buttons for circuit and logistic control settings of entities are now always visible if the entity supports them.
+  Bugfixes:
+    - Many fixes and improvements.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.110
+  Bugfixes:
+    - Fixed electric furnace shadow missing.
+    - Fixed a crash when using weak tables in the lua global table.
+    - Fixed a bonus productivity exploit when crafting machine ingredients were force returned.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.109
+  Bugfixes:
+    - Fixed a crash when trying to hand-craft recipes that have fluid ingredients.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.108
+  Bugfixes:
+    - Fixed a potential desync when calling LuaGui::is_valid_sprite_path() with a sprite path starting with "file.".
+---------------------------------------------------------------------------------------------------
+Version: 1.1.107
+  Bugfixes:
+    - Fixed first tutorial level advancing to a wrong story step after drill is set in quickbar.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.106
   Gui:
     - Added Paste button to exchange string import GUIs

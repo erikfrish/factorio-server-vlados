@@ -17,14 +17,9 @@
   },
   "tips": 
   {
-    "introduction": 
-    {
-      "status": "unlocked",
-      "elapsed": 0
-    },
     "show-info": 
     {
-      "status": "dependencies-not-met"
+      "status": "unlocked"
     },
     "e-confirm": 
     {
@@ -32,7 +27,8 @@
     },
     "clear-cursor": 
     {
-      "status": "dependencies-not-met"
+      "status": "unlocked",
+      "elapsed": 0
     },
     "pipette": 
     {
@@ -57,6 +53,34 @@
     "entity-transfers": 
     {
       "status": "locked",
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {}
+        ]
+      }
+    },
+    "z-dropping": 
+    {
+      "status": "locked",
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {}
+        ]
+      }
+    },
+    "shoot-targeting": 
+    {
+      "status": "locked",
       "conditions": 
       [
         
@@ -77,45 +101,6 @@
         ]
       }
     },
-    "z-dropping": 
-    {
-      "status": "locked",
-      "conditions": 
-      [
-        
-        {},
-        
-        {
-          "elapsed": 0
-        }
-      ]
-    },
-    "shoot-targeting": 
-    {
-      "status": "locked",
-      "conditions": 
-      [
-        
-        {},
-        
-        {
-          "elapsed": 0
-        }
-      ]
-    },
-    "shoot-targeting-controller": 
-    {
-      "status": "locked",
-      "conditions": 
-      [
-        
-        {},
-        
-        {
-          "elapsed": 0
-        }
-      ]
-    },
     "bulk-crafting": 
     {
       "status": "locked"
@@ -129,7 +114,21 @@
         {},
         
         {}
-      ]
+      ],
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {}
+        ]
+      }
+    },
+    "entity-flip": 
+    {
+      "status": "locked"
     },
     "circuit-network": 
     {
@@ -141,7 +140,71 @@
         
         {
           "elapsed": 0
-        }
+        },
+        
+        {}
+      ],
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {}
+        ]
+      }
+    },
+    "spidertron-control": 
+    {
+      "status": "locked",
+      "conditions": 
+      [
+        
+        {},
+        
+        {
+          "elapsed": 0
+        },
+        
+        {}
+      ],
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {},
+          
+          {}
+        ]
+      }
+    },
+    "belt-lanes": 
+    {
+      "status": "locked",
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {}
+        ]
+      }
+    },
+    "splitters": 
+    {
+      "status": "locked",
+      "conditions": 
+      [
+        
+        {},
+        
+        {}
       ]
     },
     "inserters": 
@@ -162,7 +225,19 @@
     },
     "insertion-limits": 
     {
-      "status": "locked"
+      "status": "locked",
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {
+            "elapsed": 0
+          }
+        ]
+      }
     },
     "limit-chests": 
     {
@@ -174,26 +249,6 @@
         
         {}
       ]
-    },
-    "transport-belts": 
-    {
-      "status": "locked"
-    },
-    "belt-lanes": 
-    {
-      "status": "locked"
-    },
-    "splitters": 
-    {
-      "status": "locked"
-    },
-    "splitter-filters": 
-    {
-      "status": "locked"
-    },
-    "underground-belts": 
-    {
-      "status": "locked"
     },
     "electric-network": 
     {
@@ -217,7 +272,9 @@
             
             {
               "elapsed": 0
-            }
+            },
+            
+            {}
           ]
         },
         
@@ -249,27 +306,73 @@
     },
     "low-power": 
     {
-      "status": "locked"
+      "status": "locked",
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {
+            "elapsed": 0
+          }
+        ]
+      }
     },
     "connect-switch": 
     {
-      "status": "locked"
+      "status": "locked",
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {}
+        ]
+      }
     },
     "copy-entity-settings": 
     {
       "status": "locked"
     },
-    "copy-entity-settings-controller": 
-    {
-      "status": "locked"
-    },
     "copy-paste-trains": 
     {
-      "status": "locked"
+      "status": "locked",
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {},
+          
+          {},
+          
+          {}
+        ]
+      }
     },
     "copy-paste-filters": 
     {
-      "status": "locked"
+      "status": "locked",
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {},
+          
+          {},
+          
+          {}
+        ]
+      }
     },
     "copy-paste-requester-chest": 
     {
@@ -296,7 +399,19 @@
     },
     "pole-dragging-coverage": 
     {
-      "status": "dependencies-not-met"
+      "status": "dependencies-not-met",
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {
+            "elapsed": 0
+          }
+        ]
+      }
     },
     "drag-building-underground-belts": 
     {
@@ -328,6 +443,29 @@
       [
         
         {},
+        
+        {}
+      ]
+    },
+    "elevated-rails": 
+    {
+      "status": "locked",
+      "conditions": 
+      [
+        
+        {},
+        
+        {
+          "conditions": 
+          [
+            
+            {},
+            
+            {
+              "elapsed": 0
+            }
+          ]
+        },
         
         {}
       ]
@@ -426,15 +564,65 @@
         {},
         
         {}
-      ]
+      ],
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {
+            "conditions": 
+            [
+              
+              {},
+              
+              {},
+              
+              {}
+            ]
+          }
+        ]
+      }
     },
     "personal-logistics": 
     {
-      "status": "locked"
+      "status": "locked",
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {},
+          
+          {
+            "conditions": 
+            [
+              
+              {},
+              
+              {}
+            ]
+          }
+        ]
+      }
     },
     "construction-robots": 
     {
-      "status": "locked"
+      "status": "locked",
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {}
+        ]
+      }
     },
     "passive-provider-chest": 
     {
@@ -501,8 +689,20 @@
         
         {
           "elapsed": 0
-        }
-      ]
+        },
+        
+        {}
+      ],
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {}
+        ]
+      }
     },
     "fast-replace": 
     {
@@ -537,6 +737,229 @@
     },
     "fast-replace-belt-underground": 
     {
+      "status": "locked",
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {}
+        ]
+      }
+    },
+    "quality": 
+    {
+      "status": "locked"
+    },
+    "quality-factoriopedia": 
+    {
+      "status": "locked",
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {
+            "elapsed": 0
+          }
+        ]
+      }
+    },
+    "quality-modules": 
+    {
+      "status": "dependencies-not-met"
+    },
+    "quality-probabilities": 
+    {
+      "status": "locked",
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {
+            "elapsed": 0
+          }
+        ]
+      }
+    },
+    "fulgora-briefing": 
+    {
+      "status": "locked"
+    },
+    "lightning-mechanics": 
+    {
+      "status": "locked"
+    },
+    "gleba-briefing": 
+    {
+      "status": "locked"
+    },
+    "agriculture": 
+    {
+      "status": "locked"
+    },
+    "vulcanus-briefing": 
+    {
+      "status": "locked"
+    },
+    "lava-processing": 
+    {
+      "status": "locked"
+    },
+    "aquilo-briefing": 
+    {
+      "status": "locked"
+    },
+    "heating-mechanics": 
+    {
+      "status": "locked",
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {}
+        ]
+      }
+    },
+    "space-platform": 
+    {
+      "status": "locked"
+    },
+    "orbital-logistics": 
+    {
+      "status": "locked",
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {}
+        ]
+      }
+    },
+    "removing-trash-in-space": 
+    {
+      "status": "locked",
+      "conditions": 
+      [
+        
+        {},
+        
+        {
+          "elapsed": 0
+        },
+        
+        {}
+      ],
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {
+            "elapsed": 0
+          }
+        ]
+      }
+    },
+    "space-science": 
+    {
+      "status": "locked",
+      "conditions": 
+      [
+        
+        {},
+        
+        {
+          "elapsed": 0
+        },
+        
+        {}
+      ]
+    },
+    "asteroid-defense": 
+    {
+      "status": "locked",
+      "conditions": 
+      [
+        
+        {},
+        
+        {},
+        
+        {}
+      ]
+    },
+    "spoilables": 
+    {
+      "status": "locked",
+      "skip_status": 
+      {
+        "conditions": 
+        [
+          
+          {},
+          
+          {
+            "elapsed": 0
+          }
+        ]
+      }
+    },
+    "spoilables-result": 
+    {
+      "status": "locked"
+    },
+    "spoilables-research": 
+    {
+      "status": "locked"
+    },
+    "introduction": 
+    {
+      "status": "unlocked",
+      "elapsed": 0
+    },
+    "shoot-targeting-controller": 
+    {
+      "status": "locked",
+      "conditions": 
+      [
+        
+        {},
+        
+        {
+          "elapsed": 0
+        }
+      ]
+    },
+    "transport-belts": 
+    {
+      "status": "locked"
+    },
+    "splitter-filters": 
+    {
+      "status": "locked"
+    },
+    "underground-belts": 
+    {
+      "status": "locked"
+    },
+    "copy-entity-settings-controller": 
+    {
       "status": "locked"
     }
   },
@@ -549,14 +972,13 @@
       {
         "visibility": 
         {
-          "public": true,
           "lan": true
         },
-        "name": "Name of the game as it will appear in the game lis",
-        "description": "Description of the game that will appear in the listing",
+        "name": "Soup made of 7 zalup",
+        "description": "Are U Gay?",
         "max_players": 0,
-        "game_time_elapsed": 1,
-        "has_password": false,
+        "game_time_elapsed": 92,
+        "has_password": true,
         "tags": 
         [
           "game",
@@ -564,9 +986,11 @@
         ]
       },
       "server-username": "",
+      "password-hash": "gjhyj",
       "autosave-interval": 10,
       "autosave-slots": 5,
-      "afk-autokick-interval": 0
+      "afk-autokick-interval": 0,
+      "required-verification": false
     },
     "save-name": "init"
   },
@@ -582,10 +1006,12 @@
   ],
   "last-played-version": 
   {
-    "game_version": "1.1.107",
-    "build_version": 62234,
+    "game_version": "2.0.47",
+    "build_version": 82606,
     "build_mode": "headless",
     "platform": "linux64"
   },
-  "blueprint-view": "grid"
+  "blueprint-view": "grid",
+  "saves-sorting-mode": "time",
+  "ticks-since-last-tip-shown": 0
 }
