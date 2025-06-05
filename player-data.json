@@ -977,7 +977,7 @@
         "name": "Soup made of 7 zalup",
         "description": "Are U Gay?",
         "max_players": 0,
-        "game_time_elapsed": 92,
+        "game_time_elapsed": 288,
         "has_password": true,
         "tags": 
         [
@@ -1006,8 +1006,8 @@
   ],
   "last-played-version": 
   {
-    "game_version": "2.0.47",
-    "build_version": 82606,
+    "game_version": "2.0.55",
+    "build_version": 83138,
     "build_mode": "headless",
     "platform": "linux64"
   },

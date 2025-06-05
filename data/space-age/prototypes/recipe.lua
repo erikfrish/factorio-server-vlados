@@ -91,7 +91,7 @@ data:extend(
       }
     },
     subgroup = "agriculture-processes",
-    order = "e[bacteria]-a[bacteria]-b[copper]",
+    order = "b[agriculture]-d[bacteria]-c[copper-bacteria]",
     enabled = false,
     allow_productivity = true,
     energy_required = 1,
@@ -126,10 +126,10 @@ data:extend(
       }
     },
     subgroup = "agriculture-processes",
-    order = "e[bacteria]-b[cultivation]-b[copper]",
+    order = "b[agriculture]-d[bacteria]-d[copper-bacteria-cultivation]",
     enabled = false,
     allow_productivity = true,
-    result_is_always_fresh = true,
+    reset_freshness_on_craft = true,
     energy_required = 4,
     ingredients =
     {
@@ -162,7 +162,7 @@ data:extend(
       }
     },
     subgroup = "agriculture-processes",
-    order = "e[bacteria]-a[bacteria]-a[iron]",
+    order = "b[agriculture]-d[bacteria]-a[iron-bacteria]",
     enabled = false,
     allow_productivity = true,
     energy_required = 1,
@@ -197,10 +197,10 @@ data:extend(
       }
     },
     subgroup = "agriculture-processes",
-    order = "e[bacteria]-b[cultivation]-a[iron]",
+    order = "b[agriculture]-d[bacteria]-b[iron-bacteria-cultivation]",
     enabled = false,
     allow_productivity = true,
-    result_is_always_fresh = true,
+    reset_freshness_on_craft = true,
     energy_required = 4,
     ingredients =
     {
@@ -326,7 +326,7 @@ data:extend(
     icon = "__space-age__/graphics/icons/nutrients-from-spoilage.png",
     category = "organic-or-assembling",
     subgroup = "agriculture-processes",
-    order = "c[nutrients]-a[nutrients-from-spoilage]",
+    order = "c[nutrients]-c[nutrients-from-spoilage]",
     enabled = false,
     allow_productivity = true,
     energy_required = 2,
@@ -346,7 +346,7 @@ data:extend(
     subgroup = "agriculture-processes",
     enabled = false,
     allow_productivity = true,
-    order = "c[nutrients]-b[nutrients-from-yumako-mash]",
+    order = "c[nutrients]-d[nutrients-from-yumako-mash]",
     energy_required = 4,
     ingredients = {{type = "item", name = "yumako-mash", amount = 4}},
     results = {{type="item", name="nutrients", amount=6}},
@@ -364,7 +364,7 @@ data:extend(
     subgroup = "agriculture-processes",
     enabled = false,
     allow_productivity = true,
-    order = "c[nutrients]-c[nutrients-from-bioflux]",
+    order = "c[nutrients]-e[nutrients-from-bioflux]",
     energy_required = 2,
     ingredients = {{type = "item", name = "bioflux", amount = 5}},
     results = {{type="item", name="nutrients", amount=40}},
@@ -393,7 +393,7 @@ data:extend(
     auto_recycle = false,
     enabled = false,
     allow_productivity = true,
-    result_is_always_fresh = true,
+    reset_freshness_on_craft = true,
     hide_from_signal_gui = true,
     energy_required = 15,
     ingredients =
@@ -1987,7 +1987,7 @@ data:extend(
     category = "cryogenics",
     energy_required = 10,
     enabled = false,
-    result_is_always_fresh = true,
+    reset_freshness_on_craft = true,
     ingredients =
     {
       {type = "item", name = "biter-egg", amount = 10},
@@ -2021,7 +2021,7 @@ data:extend(
     category = "organic-or-chemistry",
     subgroup = "nauvis-agriculture",
     order = "b[nauvis-agriculture]-b[fish-breeding]",
-    result_is_always_fresh = true,
+    reset_freshness_on_craft = true,
     auto_recycle = false,
     energy_required = 6,
     enabled = false,
@@ -2770,7 +2770,7 @@ data:extend(
     icon = "__base__/graphics/icons/tree-08.png",
     category = "organic-or-assembling",
     subgroup = "nauvis-agriculture",
-    order = "b[nauvis-agriculture]-a[wood-processing]",
+    order = "a[seeds]-a[wood-processing]",
     enabled = false,
     allow_productivity = true,
     energy_required = 2,

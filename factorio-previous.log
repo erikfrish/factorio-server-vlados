@@ -1,80 +1,10 @@
-   0.000 2025-05-30 21:47:20; Factorio 2.0.47 (build 82606, linux64, headless, space-age)
+   0.000 2025-06-05 21:10:06; Factorio 2.0.55 (build 83138, linux64, headless, space-age)
    0.004 Operating system: Linux (cachyos rolling)
-   0.004 Program arguments: "/opt/factorio/bin/x64/factorio" "--start-server-load-latest" "--server-settings" "/opt/factorio/data/server-settings.json" 
+   0.004 Program arguments: "/opt/factorio/bin/x64/factorio" "--start-server-load-latest" "--server-settings" "/opt/factorio/data/server-settings.json" "--bind" "0.0.0.0" "--port" "34197" 
    0.004 Config path: /opt/factorio/config/config.ini
    0.004 Read data path: /opt/factorio/data
-   0.004 Write data path: /opt/factorio [234137/486336MB]
+   0.004 Write data path: /opt/factorio [228905/486336MB]
    0.004 Binaries path: /opt/factorio/bin
-   0.010 System info: [CPU: AMD Ryzen 7 7700 8-Core Processor, 16 cores, RAM: 31181 MB]
-   0.010 Environment: DISPLAY=:0 WAYLAND_DISPLAY=wayland-0 DESKTOP_SESSION=gnome XDG_SESSION_DESKTOP=gnome XDG_CURRENT_DESKTOP=GNOME SDL_VIDEODRIVER=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
-   0.010 Running in headless mode
-   0.010 Audio is disabled
-   0.015 Info ModManager.cpp:444: FeatureFlag expansion-shaders = true
-   0.015 Info ModManager.cpp:444: FeatureFlag freezing = true
-   0.015 Info ModManager.cpp:444: FeatureFlag quality = true
-   0.015 Info ModManager.cpp:444: FeatureFlag rail-bridges = true
-   0.015 Info ModManager.cpp:444: FeatureFlag segmented-units = true
-   0.015 Info ModManager.cpp:444: FeatureFlag space-travel = true
-   0.015 Info ModManager.cpp:444: FeatureFlag spoiling = true
-   0.017 Loading mod core 0.0.0 (data.lua)
-   0.024 Loading mod base 2.0.47 (data.lua)
-   0.098 Loading mod elevated-rails 2.0.47 (data.lua)
-   0.108 Loading mod quality 2.0.47 (data.lua)
-   0.116 Loading mod space-age 2.0.47 (data.lua)
-   0.200 Loading mod base 2.0.47 (data-updates.lua)
-   0.207 Loading mod quality 2.0.47 (data-updates.lua)
-   0.219 Loading mod space-age 2.0.47 (data-updates.lua)
-   0.269 Checksum for core: 3673191213
-   0.269 Checksum of base: 700993118
-   0.269 Checksum of elevated-rails: 755107374
-   0.269 Checksum of quality: 3594706471
-   0.269 Checksum of space-age: 2092925450
-   0.469 Prototype list checksum: 4265511133
-   0.507 Info PlayerData.cpp:64: Local player-data.json available, timestamp 1748630705
-   0.507 Info PlayerData.cpp:71: Cloud player-data.json unavailable
-   0.507 Factorio initialised
-   0.508 Info ServerSynchronizer.cpp:22: nextHeartbeatSequenceNumber(0) initialized Synchronizer nextTickClosureTick(0).
-   0.508 Info ServerMultiplayerManager.cpp:808: updateTick(18446744073709551615) changing state from(Ready) to(PreparedToHostGame)
-   0.508 Info ServerMultiplayerManager.cpp:808: updateTick(18446744073709551615) changing state from(PreparedToHostGame) to(CreatingGame)
-   0.508 Loading map /opt/factorio/saves/init.zip: 750778 bytes.
-   0.521 Loading level.dat: 1427629 bytes.
-   0.523 Info Scenario.cpp:153: Map version 1.1.107-0
-   0.525 Info PrototypeMigrationList.cpp:197: Activating migration base/1.2.0 stack inserter rename.json
-   0.525 Info PrototypeMigrationList.cpp:197: Activating migration base/2.0.0-biter-egg.json
-   0.525 Info PrototypeMigrationList.cpp:197: Activating migration base/2.0.0-internal.json
-   0.525 Info PrototypeMigrationList.cpp:197: Activating migration base/2.0.0-internal2.json
-   0.525 Info PrototypeMigrationList.cpp:197: Activating migration base/2.0.0-internal3.json
-   0.525 Info PrototypeMigrationList.cpp:197: Activating migration base/2.0.0.json
-   0.525 Info PrototypeMigrationList.cpp:197: Activating migration space-age/aquilo-tilesets.json
-   0.525 Info PrototypeMigrationList.cpp:197: Activating migration space-age/biolab.json
-   0.525 Info PrototypeMigrationList.cpp:197: Activating migration space-age/internal.json
-   0.525 Info PrototypeMigrationList.cpp:197: Activating migration space-age/jelly-yum-rename.json
-   0.525 Info PrototypeMigrationList.cpp:197: Activating migration space-age/shattered-planet.json
-   0.525 Info PrototypeMigrationList.cpp:197: Activating migration space-age/tungsten-belt-rename.json
-   0.542 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
-   0.546 Loading script.dat: 1182 bytes.
-   0.549 Checksum for script __level__/control.lua: 2734153661
-   0.550 Applying migration: Base Mod: 2.0.0.lua
-   0.550 Info UDPSocket.cpp:32: Opening socket at (IP ADDR:({0.0.0.0:34197}))
-   0.551 Hosting game at IP ADDR:({0.0.0.0:34197})
-   0.551 Info ServerMultiplayerManager.cpp:808: updateTick(7668) changing state from(CreatingGame) to(InGame)
-   0.551 Info UDPSocket.cpp:44: Opening socket for broadcast
-   0.551 Info CommandLineMultiplayer.cpp:292: Maximum segment size = 100; minimum segment size = 25; maximum-segment-size peer count = 10; minimum-segment-size peer count = 20
-  25.838 Received SIGINT, shutting down
-  25.838 Quitting: signal.
-  25.838 Info MainLoop.cpp:437: Saving map as /opt/factorio/saves/init.zip
-  25.848 Info MainLoop.cpp:448: Saving progress: 0.167504%
-  25.850 Info MainLoop.cpp:448: Saving progress: 100.000000%
-  25.859 Info ServerMultiplayerManager.cpp:119: Disconnecting multiplayer connection.
-  25.859 Info ServerMultiplayerManager.cpp:808: updateTick(7668) changing state from(InGame) to(DisconnectingScheduled)
-  25.892 Info ServerMultiplayerManager.cpp:808: updateTick(7668) changing state from(DisconnectingScheduled) to(Disconnecting)
-  25.926 Info ServerMultiplayerManager.cpp:808: updateTick(7668) changing state from(Disconnecting) to(Disconnected)
-  25.926 Info ServerMultiplayerManager.cpp:146: Quitting multiplayer connection.
-  25.926 Info ServerMultiplayerManager.cpp:808: updateTick(7668) changing state from(Disconnected) to(Closed)
-  25.926 Info ServerMultiplayerManager.cpp:166: Deleting active scenario (global = true).
-  25.986 Info UDPSocket.cpp:232: Closing socket
-  25.986 Info UDPSocket.cpp:262: Socket closed
-  25.986 Info UDPSocket.cpp:232: Closing socket
-  26.079 Info UDPSocket.cpp:232: Closing socket
-  26.079 Info UDPSocket.cpp:262: Socket closed
-  26.108 Goodbye
+   0.009 System info: [CPU: AMD Ryzen 7 7700 8-Core Processor, 16 cores, RAM: 31182 MB]
+   0.009 Environment: DISPLAY=:0 WAYLAND_DISPLAY=wayland-0 DESKTOP_SESSION=gnome XDG_SESSION_DESKTOP=gnome XDG_CURRENT_DESKTOP=GNOME SDL_VIDEODRIVER=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.009 Error Util.cpp:81: Cannot load base mod version 2.0.47 with game version 2.0.55. Update probably failed, please download the game again.

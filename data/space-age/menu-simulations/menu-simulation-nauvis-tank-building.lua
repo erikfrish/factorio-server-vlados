@@ -48,25 +48,25 @@ return [[
     if tick==10 then
       tank.riding_state = {acceleration = defines.riding.acceleration.accelerating, direction = defines.riding.direction.left}
     end
-    if tick == 30 then
+    if tick == 22 then
       tank.riding_state = {acceleration = defines.riding.acceleration.accelerating, direction = defines.riding.direction.straight}
     end
-    if tick == 100 then
+    if tick == 92 then
       tank.riding_state = {acceleration = defines.riding.acceleration.accelerating, direction = defines.riding.direction.right}
     end
-    if tick == 125 then
+    if tick == 107 then
       tank.riding_state = {acceleration = defines.riding.acceleration.accelerating, direction = defines.riding.direction.straight}
     end
-    if tick == 230 then
+    if tick == 220 then
       tank.riding_state = {acceleration = defines.riding.acceleration.nothing, direction = defines.riding.direction.left}
     end
-    if tick == 450 then
+    if tick == 350 then
       tank.riding_state = {acceleration = defines.riding.acceleration.braking, direction = defines.riding.direction.left}
     end
-    if tick == 510 then
+    if tick == 410 then
       tank.riding_state = {acceleration = defines.riding.acceleration.braking, direction = defines.riding.direction.straight}
     end
-    if tick == 530 then
+    if tick == 430 then
       build_blueprint(radar_blueprint)
     end
   end

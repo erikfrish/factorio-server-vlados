@@ -129,6 +129,9 @@ data.raw["ammo-turret"]["gun-turret"].heating_energy = "50kW"
 data.raw["electric-turret"]["laser-turret"].heating_energy = "50kW"
 data.raw["artillery-turret"]["artillery-turret"].heating_energy = "200kW"
 data.raw["furnace"]["recycler"].heating_energy = "100kW"
+data.raw["valve"]["one-way-valve"].heating_energy = "20kW"
+data.raw["valve"]["overflow-valve"].heating_energy = "20kW"
+data.raw["valve"]["top-up-valve"].heating_energy = "20kW"
 
 data.raw["rocket-silo"]["rocket-silo"].surface_conditions =
 {
@@ -392,8 +395,8 @@ data.raw.recipe["rocket-part"].ingredients =
   {type = "item", name = "low-density-structure", amount = 1},
   {type = "item", name = "rocket-fuel", amount = 1}
 }
-data.raw.recipe["rocket-part"].subgroup = "space-interactors"
-data.raw.recipe["rocket-part"].order = "b[rocket-part]"
+data.raw.item["rocket-part"].subgroup = "space-interactors"
+data.raw.item["rocket-part"].order = "b[rocket-part]"
 
 data.raw["rocket-silo"]["rocket-silo"].cargo_station_parameters.prefer_packed_cargo_units = true
 
