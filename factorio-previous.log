@@ -1,10 +1,430 @@
-   0.000 2025-06-05 21:10:06; Factorio 2.0.55 (build 83138, linux64, headless, space-age)
-   0.004 Operating system: Linux (cachyos rolling)
-   0.004 Program arguments: "/opt/factorio/bin/x64/factorio" "--start-server-load-latest" "--server-settings" "/opt/factorio/data/server-settings.json" "--bind" "0.0.0.0" "--port" "34197" 
-   0.004 Config path: /opt/factorio/config/config.ini
-   0.004 Read data path: /opt/factorio/data
-   0.004 Write data path: /opt/factorio [228905/486336MB]
-   0.004 Binaries path: /opt/factorio/bin
-   0.009 System info: [CPU: AMD Ryzen 7 7700 8-Core Processor, 16 cores, RAM: 31182 MB]
-   0.009 Environment: DISPLAY=:0 WAYLAND_DISPLAY=wayland-0 DESKTOP_SESSION=gnome XDG_SESSION_DESKTOP=gnome XDG_CURRENT_DESKTOP=GNOME SDL_VIDEODRIVER=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
-   0.009 Error Util.cpp:81: Cannot load base mod version 2.0.47 with game version 2.0.55. Update probably failed, please download the game again.
+   0.000 2025-06-18 18:31:43; Factorio 2.0.55 (build 83138, linux64, headless, space-age)
+   0.039 Operating system: Linux (Ubuntu 22.04)
+   0.039 Program arguments: "/opt/factorio/bin/x64/factorio" "--start-server-load-latest" "--server-settings" "/opt/factorio/data/server-settings.json" "--bind" "0.0.0.0" "--port" "9999" 
+   0.039 Config path: /opt/factorio/config/config.ini
+   0.039 Read data path: /opt/factorio/data
+   0.039 Write data path: /opt/factorio [26028/29587MB]
+   0.039 Binaries path: /opt/factorio/bin
+   0.050 System info: [CPU: Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz, 16 cores, RAM: 3817 MB]
+   0.050 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEODRIVER=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.051 Running in headless mode
+   0.051 Audio is disabled
+   0.089 Info ModManager.cpp:444: FeatureFlag expansion-shaders = true
+   0.090 Info ModManager.cpp:444: FeatureFlag freezing = true
+   0.090 Info ModManager.cpp:444: FeatureFlag quality = true
+   0.090 Info ModManager.cpp:444: FeatureFlag rail-bridges = true
+   0.090 Info ModManager.cpp:444: FeatureFlag segmented-units = true
+   0.090 Info ModManager.cpp:444: FeatureFlag space-travel = true
+   0.090 Info ModManager.cpp:444: FeatureFlag spoiling = true
+   0.093 Loading mod core 0.0.0 (data.lua)
+   0.111 Loading mod base 2.0.55 (data.lua)
+   0.299 Loading mod elevated-rails 2.0.55 (data.lua)
+   0.325 Loading mod quality 2.0.55 (data.lua)
+   0.339 Loading mod space-age 2.0.55 (data.lua)
+   0.581 Loading mod base 2.0.55 (data-updates.lua)
+   0.596 Loading mod quality 2.0.55 (data-updates.lua)
+   0.620 Loading mod space-age 2.0.55 (data-updates.lua)
+   0.745 Checksum for core: 1599024484
+   0.745 Checksum of base: 2095342242
+   0.745 Checksum of elevated-rails: 755107374
+   0.745 Checksum of quality: 3594706471
+   0.745 Checksum of space-age: 2561352795
+   1.354 Prototype list checksum: 611276394
+   1.507 Info PlayerData.cpp:64: Local player-data.json available, timestamp 1750271334
+   1.508 Info PlayerData.cpp:71: Cloud player-data.json unavailable
+   1.510 Factorio initialised
+   1.510 Info ServerSynchronizer.cpp:22: nextHeartbeatSequenceNumber(0) initialized Synchronizer nextTickClosureTick(0).
+   1.510 Info ServerMultiplayerManager.cpp:808: updateTick(18446744073709551615) changing state from(Ready) to(PreparedToHostGame)
+   1.510 Info ServerMultiplayerManager.cpp:808: updateTick(18446744073709551615) changing state from(PreparedToHostGame) to(CreatingGame)
+   1.510 Loading map /opt/factorio/saves/default.zip: 6878547 bytes.
+   1.525 Loading level.dat: 20067333 bytes.
+   1.525 Info Scenario.cpp:153: Map version 2.0.55-0
+   2.327 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
+   2.327 Loading script.dat: 1267 bytes.
+   2.331 Checksum for script __level__/control.lua: 2734153661
+   2.342 Info UDPSocket.cpp:37: Opening socket at (IP ADDR:({0.0.0.0:9999}))
+   2.343 Hosting game at IP ADDR:({0.0.0.0:9999})
+   2.343 Info ServerMultiplayerManager.cpp:808: updateTick(2664001) changing state from(CreatingGame) to(InGame)
+   2.343 Info UDPSocket.cpp:49: Opening socket for broadcast
+   2.343 Info CommandLineMultiplayer.cpp:292: Maximum segment size = 100; minimum segment size = 25; maximum-segment-size peer count = 10; minimum-segment-size peer count = 20
+   7.410 ConnectionRequestReplyConfirm (type(ConnectionRequestReplyConfirm) ) from(IP ADDR:({188.134.68.183:60690}))
+   7.410 Info ServerRouter.cpp:465: Replying to connectionRequest for address(IP ADDR:({188.134.68.183:60690})).
+   7.410 Info ServerSynchronizer.cpp:594: nextHeartbeatSequenceNumber(303) adding peer(1)
+   7.428 Info ServerMultiplayerManager.cpp:808: updateTick(2664001) changing state from(InGame) to(InGameSavingMap)
+   7.443 Info ServerMultiplayerManager.cpp:978: updateTick(2664001) received stateChanged peerID(1) oldState(Ready) newState(ConnectedWaitingForMap)
+   7.660 Info ServerMultiplayerManager.cpp:1039: UpdateTick(2664001) Serving map(/opt/factorio/temp/mp-save-0.zip) for peer(1) size(6878397) auxiliary(129) crc(4091046101)
+   7.660 Info ServerMultiplayerManager.cpp:808: updateTick(2664001) changing state from(InGameSavingMap) to(InGame)
+   7.726 Info ServerMultiplayerManager.cpp:978: updateTick(2664001) received stateChanged peerID(1) oldState(ConnectedWaitingForMap) newState(ConnectedDownloadingMap)
+   8.526 Info ServerMultiplayerManager.cpp:978: updateTick(2664001) received stateChanged peerID(1) oldState(ConnectedDownloadingMap) newState(ConnectedLoadingMap)
+   9.110 Info ServerMultiplayerManager.cpp:978: updateTick(2664001) received stateChanged peerID(1) oldState(ConnectedLoadingMap) newState(TryingToCatchUp)
+   9.110 Info ServerMultiplayerManager.cpp:978: updateTick(2664001) received stateChanged peerID(1) oldState(TryingToCatchUp) newState(WaitingForCommandToStartSendingTickClosures)
+   9.126 Info GameActionHandler.cpp:4477: UpdateTick (2664001) processed PlayerJoinGame peerID(1) playerIndex(0) mode(connect) 
+   9.226 Info ServerMultiplayerManager.cpp:978: updateTick(2664007) received stateChanged peerID(1) oldState(WaitingForCommandToStartSendingTickClosures) newState(InGame)
+  13.760 ConnectionRequestReplyConfirm (type(ConnectionRequestReplyConfirm) ) from(IP ADDR:({10.11.12.13:55381}))
+  13.760 Info ServerRouter.cpp:465: Replying to connectionRequest for address(IP ADDR:({10.11.12.13:55381})).
+  13.760 Info ServerSynchronizer.cpp:594: nextHeartbeatSequenceNumber(684) adding peer(2)
+  13.778 Info ServerMultiplayerManager.cpp:808: updateTick(2664280) changing state from(InGame) to(InGameSavingMap)
+  13.793 Info ServerMultiplayerManager.cpp:978: updateTick(2664280) received stateChanged peerID(2) oldState(Ready) newState(ConnectedWaitingForMap)
+  14.060 Info ServerMultiplayerManager.cpp:1039: UpdateTick(2664280) Serving map(/opt/factorio/temp/mp-save-1.zip) for peer(2) size(6885383) auxiliary(129) crc(1388616855)
+  14.060 Info ServerMultiplayerManager.cpp:808: updateTick(2664280) changing state from(InGameSavingMap) to(InGame)
+  14.126 Info ServerMultiplayerManager.cpp:978: updateTick(2664283) received stateChanged peerID(2) oldState(ConnectedWaitingForMap) newState(ConnectedDownloadingMap)
+  14.960 Info ServerMultiplayerManager.cpp:978: updateTick(2664333) received stateChanged peerID(2) oldState(ConnectedDownloadingMap) newState(ConnectedLoadingMap)
+  15.576 Info ServerMultiplayerManager.cpp:978: updateTick(2664370) received stateChanged peerID(2) oldState(ConnectedLoadingMap) newState(TryingToCatchUp)
+  15.726 Info ServerMultiplayerManager.cpp:978: updateTick(2664379) received stateChanged peerID(2) oldState(TryingToCatchUp) newState(WaitingForCommandToStartSendingTickClosures)
+  15.727 Info GameActionHandler.cpp:4477: UpdateTick (2664379) processed PlayerJoinGame peerID(2) playerIndex(3) mode(connect) 
+  15.760 Info ServerMultiplayerManager.cpp:978: updateTick(2664381) received stateChanged peerID(2) oldState(WaitingForCommandToStartSendingTickClosures) newState(InGame)
+ 609.426 Info AppManager.cpp:323: Saving to _autosave5 (blocking).
+ 609.876 Info AppManagerStates.cpp:2110: Saving finished
+1209.876 Info AppManager.cpp:323: Saving to _autosave1 (blocking).
+1210.210 Info AppManagerStates.cpp:2110: Saving finished
+1810.210 Info AppManager.cpp:323: Saving to _autosave2 (blocking).
+1810.543 Info AppManagerStates.cpp:2110: Saving finished
+2410.543 Info AppManager.cpp:323: Saving to _autosave3 (blocking).
+2410.876 Info AppManagerStates.cpp:2110: Saving finished
+3010.876 Info AppManager.cpp:323: Saving to _autosave4 (blocking).
+3011.193 Info AppManagerStates.cpp:2110: Saving finished
+3289.059 Info ServerMultiplayerManager.cpp:1086: Disconnect notification for peer (1)
+3289.060 Info ServerMultiplayerManager.cpp:978: updateTick(2860673) received stateChanged peerID(1) oldState(InGame) newState(DisconnectScheduled)
+3289.060 Info ServerSynchronizer.cpp:613: nextHeartbeatSequenceNumber(197203) removing peer(1).
+3611.193 Info AppManager.cpp:323: Saving to _autosave5 (blocking).
+3611.526 Info AppManagerStates.cpp:2110: Saving finished
+4211.526 Info AppManager.cpp:323: Saving to _autosave1 (blocking).
+4211.876 Info AppManagerStates.cpp:2110: Saving finished
+4811.876 Info AppManager.cpp:323: Saving to _autosave2 (blocking).
+4812.326 Info AppManagerStates.cpp:2110: Saving finished
+5412.326 Info AppManager.cpp:323: Saving to _autosave3 (blocking).
+5412.643 Info AppManagerStates.cpp:2110: Saving finished
+6012.643 Info AppManager.cpp:323: Saving to _autosave4 (blocking).
+6012.976 Info AppManagerStates.cpp:2110: Saving finished
+6612.976 Info AppManager.cpp:323: Saving to _autosave5 (blocking).
+6613.295 Info AppManagerStates.cpp:2110: Saving finished
+7213.293 Info AppManager.cpp:323: Saving to _autosave1 (blocking).
+7213.626 Info AppManagerStates.cpp:2110: Saving finished
+7813.626 Info AppManager.cpp:323: Saving to _autosave2 (blocking).
+7813.976 Info AppManagerStates.cpp:2110: Saving finished
+8413.976 Info AppManager.cpp:323: Saving to _autosave3 (blocking).
+8414.326 Info AppManagerStates.cpp:2110: Saving finished
+9014.326 Info AppManager.cpp:323: Saving to _autosave4 (blocking).
+9014.676 Info AppManagerStates.cpp:2110: Saving finished
+9614.676 Info AppManager.cpp:323: Saving to _autosave5 (blocking).
+9615.026 Info AppManagerStates.cpp:2110: Saving finished
+10215.026 Info AppManager.cpp:323: Saving to _autosave1 (blocking).
+10215.359 Info AppManagerStates.cpp:2110: Saving finished
+10815.359 Info AppManager.cpp:323: Saving to _autosave2 (blocking).
+10815.694 Info AppManagerStates.cpp:2110: Saving finished
+11415.693 Info AppManager.cpp:323: Saving to _autosave3 (blocking).
+11416.043 Info AppManagerStates.cpp:2110: Saving finished
+12016.042 Info AppManager.cpp:323: Saving to _autosave4 (blocking).
+12016.377 Info AppManagerStates.cpp:2110: Saving finished
+12616.376 Info AppManager.cpp:323: Saving to _autosave5 (blocking).
+12616.709 Info AppManagerStates.cpp:2110: Saving finished
+12850.743 ConnectionRequestReplyConfirm (type(ConnectionRequestReplyConfirm) ) from(IP ADDR:({188.134.68.183:48169}))
+12850.743 Info ServerRouter.cpp:465: Replying to connectionRequest for address(IP ADDR:({188.134.68.183:48169})).
+12850.743 Info ServerSynchronizer.cpp:594: nextHeartbeatSequenceNumber(770903) adding peer(3)
+12850.761 Info ServerMultiplayerManager.cpp:808: updateTick(3434044) changing state from(InGame) to(InGameSavingMap)
+12850.776 Info ServerMultiplayerManager.cpp:978: updateTick(3434044) received stateChanged peerID(3) oldState(Ready) newState(ConnectedWaitingForMap)
+12851.110 Info ServerMultiplayerManager.cpp:1039: UpdateTick(3434044) Serving map(/opt/factorio/temp/mp-save-2.zip) for peer(3) size(7861219) auxiliary(129) crc(354841923)
+12851.110 Info ServerMultiplayerManager.cpp:808: updateTick(3434044) changing state from(InGameSavingMap) to(InGame)
+12851.159 Info ServerMultiplayerManager.cpp:978: updateTick(3434046) received stateChanged peerID(3) oldState(ConnectedWaitingForMap) newState(ConnectedDownloadingMap)
+12852.159 Info ServerMultiplayerManager.cpp:978: updateTick(3434106) received stateChanged peerID(3) oldState(ConnectedDownloadingMap) newState(ConnectedLoadingMap)
+12852.759 Info ServerMultiplayerManager.cpp:978: updateTick(3434142) received stateChanged peerID(3) oldState(ConnectedLoadingMap) newState(TryingToCatchUp)
+12852.926 Info ServerMultiplayerManager.cpp:978: updateTick(3434152) received stateChanged peerID(3) oldState(TryingToCatchUp) newState(WaitingForCommandToStartSendingTickClosures)
+12852.926 Info GameActionHandler.cpp:4477: UpdateTick (3434152) processed PlayerJoinGame peerID(3) playerIndex(0) mode(connect) 
+12852.976 Info ServerMultiplayerManager.cpp:978: updateTick(3434155) received stateChanged peerID(3) oldState(WaitingForCommandToStartSendingTickClosures) newState(InGame)
+13217.076 Info AppManager.cpp:323: Saving to _autosave1 (blocking).
+13217.443 Info AppManagerStates.cpp:2110: Saving finished
+13817.442 Info AppManager.cpp:323: Saving to _autosave2 (blocking).
+13817.809 Info AppManagerStates.cpp:2110: Saving finished
+14417.809 Info AppManager.cpp:323: Saving to _autosave3 (blocking).
+14418.193 Info AppManagerStates.cpp:2110: Saving finished
+15018.242 Info AppManager.cpp:323: Saving to _autosave4 (blocking).
+15018.609 Info AppManagerStates.cpp:2110: Saving finished
+15618.659 Info AppManager.cpp:323: Saving to _autosave5 (blocking).
+15619.092 Info AppManagerStates.cpp:2110: Saving finished
+16219.092 Info AppManager.cpp:323: Saving to _autosave1 (blocking).
+16219.511 Info AppManagerStates.cpp:2110: Saving finished
+16819.509 Info AppManager.cpp:323: Saving to _autosave2 (blocking).
+16819.909 Info AppManagerStates.cpp:2110: Saving finished
+17419.909 Info AppManager.cpp:323: Saving to _autosave3 (blocking).
+17420.309 Info AppManagerStates.cpp:2110: Saving finished
+17892.309 Info ServerMultiplayerManager.cpp:1086: Disconnect notification for peer (3)
+17892.309 Info ServerMultiplayerManager.cpp:978: updateTick(3736321) received stateChanged peerID(3) oldState(InGame) newState(DisconnectScheduled)
+17892.309 Info ServerSynchronizer.cpp:613: nextHeartbeatSequenceNumber(1073364) removing peer(3).
+17897.809 Info ServerMultiplayerManager.cpp:1086: Disconnect notification for peer (2)
+17897.809 Info ServerMultiplayerManager.cpp:978: updateTick(3736651) received stateChanged peerID(2) oldState(InGame) newState(DisconnectScheduled)
+17897.809 Info ServerSynchronizer.cpp:613: nextHeartbeatSequenceNumber(1073694) removing peer(2).
+17898.809 Info ServerMultiplayerManager.cpp:1231: Auto saving map as /opt/factorio/saves/default.zip
+17898.826 Info AppManager.cpp:415: Saving game as /opt/factorio/saves/default.zip
+17899.209 Info AppManagerStates.cpp:2110: Saving finished
+78724.023 ConnectionRequestReplyConfirm (type(ConnectionRequestReplyConfirm) ) from(IP ADDR:({91.84.102.220:50684}))
+78724.023 Info ServerRouter.cpp:465: Replying to connectionRequest for address(IP ADDR:({91.84.102.220:50684})).
+78724.024 Info ServerSynchronizer.cpp:594: nextHeartbeatSequenceNumber(4723266) adding peer(4)
+78724.051 Info ServerMultiplayerManager.cpp:808: updateTick(3736652) changing state from(InGame) to(InGameSavingMap)
+78724.140 Info ServerMultiplayerManager.cpp:978: updateTick(3736652) received stateChanged peerID(4) oldState(Ready) newState(ConnectedWaitingForMap)
+78724.723 Info ServerMultiplayerManager.cpp:1039: UpdateTick(3736652) Serving map(/opt/factorio/temp/mp-save-3.zip) for peer(4) size(8151422) auxiliary(129) crc(4061512768)
+78724.723 Info ServerMultiplayerManager.cpp:808: updateTick(3736652) changing state from(InGameSavingMap) to(InGame)
+78724.856 Info ServerMultiplayerManager.cpp:978: updateTick(3736652) received stateChanged peerID(4) oldState(ConnectedWaitingForMap) newState(ConnectedDownloadingMap)
+78729.157 Info ServerMultiplayerManager.cpp:978: updateTick(3736652) received stateChanged peerID(4) oldState(ConnectedDownloadingMap) newState(ConnectedLoadingMap)
+78729.806 Info ServerMultiplayerManager.cpp:978: updateTick(3736652) received stateChanged peerID(4) oldState(ConnectedLoadingMap) newState(TryingToCatchUp)
+78729.807 Info ServerMultiplayerManager.cpp:978: updateTick(3736652) received stateChanged peerID(4) oldState(TryingToCatchUp) newState(WaitingForCommandToStartSendingTickClosures)
+78729.824 Info GameActionHandler.cpp:4477: UpdateTick (3736652) processed PlayerJoinGame peerID(4) playerIndex(0) mode(connect) 
+78729.990 Info ServerMultiplayerManager.cpp:978: updateTick(3736662) received stateChanged peerID(4) oldState(WaitingForCommandToStartSendingTickClosures) newState(InGame)
+78740.457 Info ServerMultiplayerManager.cpp:1086: Disconnect notification for peer (4)
+78740.457 Info ServerMultiplayerManager.cpp:978: updateTick(3737290) received stateChanged peerID(4) oldState(InGame) newState(DisconnectScheduled)
+78740.457 Info ServerSynchronizer.cpp:613: nextHeartbeatSequenceNumber(4724253) removing peer(4).
+78741.456 Info ServerMultiplayerManager.cpp:1231: Auto saving map as /opt/factorio/saves/default.zip
+78741.473 Info AppManager.cpp:415: Saving game as /opt/factorio/saves/default.zip
+78741.790 Info AppManagerStates.cpp:2110: Saving finished
+160603.653 ConnectionRequestReplyConfirm (type(ConnectionRequestReplyConfirm) ) from(IP ADDR:({188.134.68.183:58281}))
+160603.653 Info ServerRouter.cpp:465: Replying to connectionRequest for address(IP ADDR:({188.134.68.183:58281})).
+160603.654 Info ServerSynchronizer.cpp:594: nextHeartbeatSequenceNumber(9636042) adding peer(5)
+160603.679 Info ServerMultiplayerManager.cpp:808: updateTick(3737291) changing state from(InGame) to(InGameSavingMap)
+160603.687 Info ServerMultiplayerManager.cpp:978: updateTick(3737291) received stateChanged peerID(5) oldState(Ready) newState(ConnectedWaitingForMap)
+160604.270 Info ServerMultiplayerManager.cpp:1039: UpdateTick(3737291) Serving map(/opt/factorio/temp/mp-save-4.zip) for peer(5) size(8152585) auxiliary(129) crc(3063501705)
+160604.270 Info ServerMultiplayerManager.cpp:808: updateTick(3737291) changing state from(InGameSavingMap) to(InGame)
+160604.337 Info ServerMultiplayerManager.cpp:978: updateTick(3737291) received stateChanged peerID(5) oldState(ConnectedWaitingForMap) newState(ConnectedDownloadingMap)
+160605.437 Info ServerMultiplayerManager.cpp:978: updateTick(3737291) received stateChanged peerID(5) oldState(ConnectedDownloadingMap) newState(ConnectedLoadingMap)
+160606.053 Info ServerMultiplayerManager.cpp:978: updateTick(3737291) received stateChanged peerID(5) oldState(ConnectedLoadingMap) newState(TryingToCatchUp)
+160606.053 Info ServerMultiplayerManager.cpp:978: updateTick(3737291) received stateChanged peerID(5) oldState(TryingToCatchUp) newState(WaitingForCommandToStartSendingTickClosures)
+160606.070 Info GameActionHandler.cpp:4477: UpdateTick (3737291) processed PlayerJoinGame peerID(5) playerIndex(0) mode(connect) 
+160606.153 Info ServerMultiplayerManager.cpp:978: updateTick(3737296) received stateChanged peerID(5) oldState(WaitingForCommandToStartSendingTickClosures) newState(InGame)
+160717.903 Info AppManager.cpp:323: Saving to _autosave4 (blocking).
+160718.320 Info AppManagerStates.cpp:2110: Saving finished
+161141.420 ConnectionRequestReplyConfirm (type(ConnectionRequestReplyConfirm) ) from(IP ADDR:({91.84.102.220:54085}))
+161141.420 Refusing connection for address (IP ADDR:({91.84.102.220:54085})), username (glinnor). PasswordMissing
+161145.053 ConnectionRequestReplyConfirm (type(ConnectionRequestReplyConfirm) ) from(IP ADDR:({91.84.102.220:54086}))
+161145.053 Refusing connection for address (IP ADDR:({91.84.102.220:54086})), username (glinnor). PasswordMismatch
+161147.370 ConnectionRequestReplyConfirm (type(ConnectionRequestReplyConfirm) ) from(IP ADDR:({91.84.102.220:54087}))
+161147.370 Info ServerRouter.cpp:465: Replying to connectionRequest for address(IP ADDR:({91.84.102.220:54087})).
+161147.370 Info ServerSynchronizer.cpp:594: nextHeartbeatSequenceNumber(9668665) adding peer(6)
+161147.389 Info ServerMultiplayerManager.cpp:808: updateTick(3769745) changing state from(InGame) to(InGameSavingMap)
+161147.487 Info ServerMultiplayerManager.cpp:978: updateTick(3769745) received stateChanged peerID(6) oldState(Ready) newState(ConnectedWaitingForMap)
+161147.887 Info ServerMultiplayerManager.cpp:1039: UpdateTick(3769745) Serving map(/opt/factorio/temp/mp-save-5.zip) for peer(6) size(8176495) auxiliary(129) crc(2609121444)
+161147.887 Info ServerMultiplayerManager.cpp:808: updateTick(3769745) changing state from(InGameSavingMap) to(InGame)
+161148.020 Info ServerMultiplayerManager.cpp:978: updateTick(3769752) received stateChanged peerID(6) oldState(ConnectedWaitingForMap) newState(ConnectedDownloadingMap)
+161150.703 Info ServerMultiplayerManager.cpp:978: updateTick(3769913) received stateChanged peerID(6) oldState(ConnectedDownloadingMap) newState(ConnectedLoadingMap)
+161151.537 Info ServerMultiplayerManager.cpp:978: updateTick(3769963) received stateChanged peerID(6) oldState(ConnectedLoadingMap) newState(TryingToCatchUp)
+161151.903 Info ServerMultiplayerManager.cpp:978: updateTick(3769985) received stateChanged peerID(6) oldState(TryingToCatchUp) newState(WaitingForCommandToStartSendingTickClosures)
+161151.904 Info GameActionHandler.cpp:4477: UpdateTick (3769985) processed PlayerJoinGame peerID(6) playerIndex(3) mode(connect) 
+161152.036 Info ServerMultiplayerManager.cpp:978: updateTick(3769993) received stateChanged peerID(6) oldState(WaitingForCommandToStartSendingTickClosures) newState(InGame)
+161312.953 Info ServerMultiplayerManager.cpp:1086: Disconnect notification for peer (6)
+161312.953 Info ServerSynchronizer.cpp:613: nextHeartbeatSequenceNumber(9678601) removing peer(6).
+161318.836 Info AppManager.cpp:323: Saving to _autosave5 (blocking).
+161319.238 Info AppManagerStates.cpp:2110: Saving finished
+161320.170 ConnectionRequestReplyConfirm (type(ConnectionRequestReplyConfirm) ) from(IP ADDR:({10.11.12.13:61455}))
+161320.170 Info ServerRouter.cpp:465: Replying to connectionRequest for address(IP ADDR:({10.11.12.13:61455})).
+161320.170 Info ServerSynchronizer.cpp:594: nextHeartbeatSequenceNumber(9679033) adding peer(7)
+161320.188 Info ServerMultiplayerManager.cpp:808: updateTick(3780058) changing state from(InGame) to(InGameSavingMap)
+161320.203 Info ServerMultiplayerManager.cpp:978: updateTick(3780058) received stateChanged peerID(7) oldState(Ready) newState(ConnectedWaitingForMap)
+161320.487 Info ServerMultiplayerManager.cpp:1039: UpdateTick(3780058) Serving map(/opt/factorio/temp/mp-save-6.zip) for peer(7) size(8156510) auxiliary(129) crc(3398225970)
+161320.487 Info ServerMultiplayerManager.cpp:808: updateTick(3780058) changing state from(InGameSavingMap) to(InGame)
+161320.553 Info ServerMultiplayerManager.cpp:978: updateTick(3780061) received stateChanged peerID(7) oldState(ConnectedWaitingForMap) newState(ConnectedDownloadingMap)
+161321.386 Info ServerMultiplayerManager.cpp:978: updateTick(3780111) received stateChanged peerID(7) oldState(ConnectedDownloadingMap) newState(ConnectedLoadingMap)
+161322.170 Info ServerMultiplayerManager.cpp:978: updateTick(3780158) received stateChanged peerID(7) oldState(ConnectedLoadingMap) newState(TryingToCatchUp)
+161322.337 Info ServerMultiplayerManager.cpp:978: updateTick(3780168) received stateChanged peerID(7) oldState(TryingToCatchUp) newState(WaitingForCommandToStartSendingTickClosures)
+161322.337 Info GameActionHandler.cpp:4477: UpdateTick (3780168) processed PlayerJoinGame peerID(7) playerIndex(3) mode(connect) 
+161322.387 Info ServerMultiplayerManager.cpp:978: updateTick(3780171) received stateChanged peerID(7) oldState(WaitingForCommandToStartSendingTickClosures) newState(InGame)
+161919.553 Info AppManager.cpp:323: Saving to _autosave1 (blocking).
+161919.953 Info AppManagerStates.cpp:2110: Saving finished
+162519.953 Info AppManager.cpp:323: Saving to _autosave2 (blocking).
+162520.370 Info AppManagerStates.cpp:2110: Saving finished
+163120.370 Info AppManager.cpp:323: Saving to _autosave3 (blocking).
+163120.770 Info AppManagerStates.cpp:2110: Saving finished
+163720.770 Info AppManager.cpp:323: Saving to _autosave4 (blocking).
+163721.170 Info AppManagerStates.cpp:2110: Saving finished
+164321.553 Info AppManager.cpp:323: Saving to _autosave5 (blocking).
+164322.137 Info AppManagerStates.cpp:2110: Saving finished
+164353.620 ConnectionRequestReplyConfirm (type(ConnectionRequestReplyConfirm) ) from(IP ADDR:({80.222.52.130:57811}))
+164353.620 Refusing connection for address (IP ADDR:({80.222.52.130:57811})), username (Piskorez228). PasswordMissing
+164358.020 ConnectionRequestReplyConfirm (type(ConnectionRequestReplyConfirm) ) from(IP ADDR:({80.222.52.130:57812}))
+164358.020 Info ServerRouter.cpp:465: Replying to connectionRequest for address(IP ADDR:({80.222.52.130:57812})).
+164358.020 Info ServerSynchronizer.cpp:594: nextHeartbeatSequenceNumber(9861252) adding peer(8)
+164358.039 Info ServerMultiplayerManager.cpp:808: updateTick(3962155) changing state from(InGame) to(InGameSavingMap)
+164358.087 Info ServerMultiplayerManager.cpp:978: updateTick(3962155) received stateChanged peerID(8) oldState(Ready) newState(ConnectedWaitingForMap)
+164358.820 Info ServerMultiplayerManager.cpp:1039: UpdateTick(3962155) Serving map(/opt/factorio/temp/mp-save-7.zip) for peer(8) size(8629019) auxiliary(129) crc(1020946552)
+164358.820 Info ServerMultiplayerManager.cpp:808: updateTick(3962155) changing state from(InGameSavingMap) to(InGame)
+164358.903 Info ServerMultiplayerManager.cpp:978: updateTick(3962159) received stateChanged peerID(8) oldState(ConnectedWaitingForMap) newState(ConnectedDownloadingMap)
+164360.253 Info ServerMultiplayerManager.cpp:978: updateTick(3962240) received stateChanged peerID(8) oldState(ConnectedDownloadingMap) newState(ConnectedLoadingMap)
+164361.220 Info ServerMultiplayerManager.cpp:978: updateTick(3962298) received stateChanged peerID(8) oldState(ConnectedLoadingMap) newState(TryingToCatchUp)
+164361.453 Info ServerMultiplayerManager.cpp:978: updateTick(3962312) received stateChanged peerID(8) oldState(TryingToCatchUp) newState(WaitingForCommandToStartSendingTickClosures)
+164361.454 Info GameActionHandler.cpp:4477: UpdateTick (3962312) processed PlayerJoinGame peerID(8) playerIndex(5) mode(create) 
+164361.520 Info ServerMultiplayerManager.cpp:978: updateTick(3962316) received stateChanged peerID(8) oldState(WaitingForCommandToStartSendingTickClosures) newState(InGame)
+164922.986 Info AppManager.cpp:323: Saving to _autosave1 (blocking).
+164923.503 Info AppManagerStates.cpp:2110: Saving finished
+165523.503 Info AppManager.cpp:323: Saving to _autosave2 (blocking).
+165524.020 Info AppManagerStates.cpp:2110: Saving finished
+166124.020 Info AppManager.cpp:323: Saving to _autosave3 (blocking).
+166124.570 Info AppManagerStates.cpp:2110: Saving finished
+166360.453 Info ServerMultiplayerManager.cpp:1086: Disconnect notification for peer (8)
+166360.453 Info ServerMultiplayerManager.cpp:978: updateTick(4082154) received stateChanged peerID(8) oldState(InGame) newState(DisconnectScheduled)
+166360.453 Info ServerSynchronizer.cpp:613: nextHeartbeatSequenceNumber(9981386) removing peer(8).
+166724.570 Info AppManager.cpp:323: Saving to _autosave4 (blocking).
+166725.120 Info AppManagerStates.cpp:2110: Saving finished
+167325.120 Info AppManager.cpp:323: Saving to _autosave5 (blocking).
+167325.686 Info AppManagerStates.cpp:2110: Saving finished
+167504.053 Info ServerMultiplayerManager.cpp:1086: Disconnect notification for peer (5)
+167504.053 Info ServerSynchronizer.cpp:613: nextHeartbeatSequenceNumber(10050002) removing peer(5).
+167925.686 Info AppManager.cpp:323: Saving to _autosave1 (blocking).
+167926.236 Info AppManagerStates.cpp:2110: Saving finished
+168526.236 Info AppManager.cpp:323: Saving to _autosave2 (blocking).
+168526.803 Info AppManagerStates.cpp:2110: Saving finished
+169126.803 Info AppManager.cpp:323: Saving to _autosave3 (blocking).
+169127.486 Info AppManagerStates.cpp:2110: Saving finished
+169270.986 Info ServerMultiplayerManager.cpp:1086: Disconnect notification for peer (7)
+169270.986 Info ServerMultiplayerManager.cpp:978: updateTick(4256611) received stateChanged peerID(7) oldState(InGame) newState(DisconnectScheduled)
+169270.987 Info ServerSynchronizer.cpp:613: nextHeartbeatSequenceNumber(10156018) removing peer(7).
+169271.986 Info ServerMultiplayerManager.cpp:1231: Auto saving map as /opt/factorio/saves/default.zip
+169272.003 Info AppManager.cpp:415: Saving game as /opt/factorio/saves/default.zip
+169272.536 Info AppManagerStates.cpp:2110: Saving finished
+169515.536 ConnectionRequestReplyConfirm (type(ConnectionRequestReplyConfirm) ) from(IP ADDR:({188.134.68.183:54343}))
+169515.536 Info ServerRouter.cpp:465: Replying to connectionRequest for address(IP ADDR:({188.134.68.183:54343})).
+169515.536 Info ServerSynchronizer.cpp:594: nextHeartbeatSequenceNumber(10170690) adding peer(9)
+169515.557 Info ServerMultiplayerManager.cpp:808: updateTick(4256612) changing state from(InGame) to(InGameSavingMap)
+169515.570 Info ServerMultiplayerManager.cpp:978: updateTick(4256612) received stateChanged peerID(9) oldState(Ready) newState(ConnectedWaitingForMap)
+169515.953 Info ServerMultiplayerManager.cpp:1039: UpdateTick(4256612) Serving map(/opt/factorio/temp/mp-save-8.zip) for peer(9) size(8700442) auxiliary(129) crc(1571852379)
+169515.953 Info ServerMultiplayerManager.cpp:808: updateTick(4256612) changing state from(InGameSavingMap) to(InGame)
+169516.020 Info ServerMultiplayerManager.cpp:978: updateTick(4256612) received stateChanged peerID(9) oldState(ConnectedWaitingForMap) newState(ConnectedDownloadingMap)
+169517.486 Info ServerMultiplayerManager.cpp:978: updateTick(4256612) received stateChanged peerID(9) oldState(ConnectedDownloadingMap) newState(ConnectedLoadingMap)
+169518.720 Info ServerMultiplayerManager.cpp:978: updateTick(4256612) received stateChanged peerID(9) oldState(ConnectedLoadingMap) newState(TryingToCatchUp)
+169518.720 Info ServerMultiplayerManager.cpp:978: updateTick(4256612) received stateChanged peerID(9) oldState(TryingToCatchUp) newState(WaitingForCommandToStartSendingTickClosures)
+169518.737 Info GameActionHandler.cpp:4477: UpdateTick (4256612) processed PlayerJoinGame peerID(9) playerIndex(0) mode(connect) 
+169518.853 Info ServerMultiplayerManager.cpp:978: updateTick(4256619) received stateChanged peerID(9) oldState(WaitingForCommandToStartSendingTickClosures) newState(InGame)
+169520.620 Info ServerMultiplayerManager.cpp:1086: Disconnect notification for peer (9)
+169520.620 Info ServerMultiplayerManager.cpp:978: updateTick(4256725) received stateChanged peerID(9) oldState(InGame) newState(DisconnectScheduled)
+169520.620 Info ServerSynchronizer.cpp:613: nextHeartbeatSequenceNumber(10170996) removing peer(9).
+169521.620 Info ServerMultiplayerManager.cpp:1231: Auto saving map as /opt/factorio/saves/default.zip
+169521.636 Info AppManager.cpp:415: Saving game as /opt/factorio/saves/default.zip
+169522.087 Info AppManagerStates.cpp:2110: Saving finished
+173126.753 ConnectionRequestReplyConfirm (type(ConnectionRequestReplyConfirm) ) from(IP ADDR:({188.134.68.183:58202}))
+173126.753 Info ServerRouter.cpp:465: Replying to connectionRequest for address(IP ADDR:({188.134.68.183:58202})).
+173126.753 Info ServerSynchronizer.cpp:594: nextHeartbeatSequenceNumber(10387363) adding peer(10)
+173126.773 Info ServerMultiplayerManager.cpp:808: updateTick(4256726) changing state from(InGame) to(InGameSavingMap)
+173126.786 Info ServerMultiplayerManager.cpp:978: updateTick(4256726) received stateChanged peerID(10) oldState(Ready) newState(ConnectedWaitingForMap)
+173127.436 Info ServerMultiplayerManager.cpp:1039: UpdateTick(4256726) Serving map(/opt/factorio/temp/mp-save-9.zip) for peer(10) size(8700786) auxiliary(129) crc(1581572709)
+173127.436 Info ServerMultiplayerManager.cpp:808: updateTick(4256726) changing state from(InGameSavingMap) to(InGame)
+173127.486 Info ServerMultiplayerManager.cpp:978: updateTick(4256726) received stateChanged peerID(10) oldState(ConnectedWaitingForMap) newState(ConnectedDownloadingMap)
+173129.069 Info ServerMultiplayerManager.cpp:978: updateTick(4256726) received stateChanged peerID(10) oldState(ConnectedDownloadingMap) newState(ConnectedLoadingMap)
+173130.503 Info ServerMultiplayerManager.cpp:978: updateTick(4256726) received stateChanged peerID(10) oldState(ConnectedLoadingMap) newState(TryingToCatchUp)
+173130.503 Info ServerMultiplayerManager.cpp:978: updateTick(4256726) received stateChanged peerID(10) oldState(TryingToCatchUp) newState(WaitingForCommandToStartSendingTickClosures)
+173130.520 Info GameActionHandler.cpp:4477: UpdateTick (4256726) processed PlayerJoinGame peerID(10) playerIndex(0) mode(connect) 
+173130.653 Info ServerMultiplayerManager.cpp:978: updateTick(4256734) received stateChanged peerID(10) oldState(WaitingForCommandToStartSendingTickClosures) newState(InGame)
+173585.103 Info AppManager.cpp:323: Saving to _autosave4 (blocking).
+173585.620 Info AppManagerStates.cpp:2110: Saving finished
+174185.619 Info AppManager.cpp:323: Saving to _autosave5 (blocking).
+174186.153 Info AppManagerStates.cpp:2110: Saving finished
+174463.986 ConnectionRequestReplyConfirm (type(ConnectionRequestReplyConfirm) ) from(IP ADDR:({10.11.12.13:50955}))
+174463.986 Info ServerRouter.cpp:465: Replying to connectionRequest for address(IP ADDR:({10.11.12.13:50955})).
+174463.986 Info ServerSynchronizer.cpp:594: nextHeartbeatSequenceNumber(10467597) adding peer(11)
+174464.005 Info ServerMultiplayerManager.cpp:808: updateTick(4336672) changing state from(InGame) to(InGameSavingMap)
+174464.019 Info ServerMultiplayerManager.cpp:978: updateTick(4336672) received stateChanged peerID(11) oldState(Ready) newState(ConnectedWaitingForMap)
+174464.603 Info ServerMultiplayerManager.cpp:1039: UpdateTick(4336672) Serving map(/opt/factorio/temp/mp-save-10.zip) for peer(11) size(8739098) auxiliary(129) crc(2368936958)
+174464.603 Info ServerMultiplayerManager.cpp:808: updateTick(4336672) changing state from(InGameSavingMap) to(InGame)
+174464.653 Info ServerMultiplayerManager.cpp:978: updateTick(4336674) received stateChanged peerID(11) oldState(ConnectedWaitingForMap) newState(ConnectedDownloadingMap)
+174465.053 Info ServerMultiplayerManager.cpp:978: updateTick(4336698) received stateChanged peerID(11) oldState(ConnectedDownloadingMap) newState(ConnectedLoadingMap)
+174466.153 Info ServerMultiplayerManager.cpp:978: updateTick(4336764) received stateChanged peerID(11) oldState(ConnectedLoadingMap) newState(TryingToCatchUp)
+174466.319 Info ServerMultiplayerManager.cpp:978: updateTick(4336774) received stateChanged peerID(11) oldState(TryingToCatchUp) newState(WaitingForCommandToStartSendingTickClosures)
+174466.320 Info GameActionHandler.cpp:4477: UpdateTick (4336774) processed PlayerJoinGame peerID(11) playerIndex(3) mode(connect) 
+174466.369 Info ServerMultiplayerManager.cpp:978: updateTick(4336777) received stateChanged peerID(11) oldState(WaitingForCommandToStartSendingTickClosures) newState(InGame)
+174512.219 Info ServerMultiplayerManager.cpp:1086: Disconnect notification for peer (11)
+174512.219 Info ServerMultiplayerManager.cpp:978: updateTick(4339528) received stateChanged peerID(11) oldState(InGame) newState(DisconnectScheduled)
+174512.220 Info ServerSynchronizer.cpp:613: nextHeartbeatSequenceNumber(10470492) removing peer(11).
+174786.769 Info AppManager.cpp:323: Saving to _autosave1 (blocking).
+174787.286 Info AppManagerStates.cpp:2110: Saving finished
+175107.603 ConnectionRequestReplyConfirm (type(ConnectionRequestReplyConfirm) ) from(IP ADDR:({10.11.12.13:58637}))
+175107.603 Info ServerRouter.cpp:465: Replying to connectionRequest for address(IP ADDR:({10.11.12.13:58637})).
+175107.603 Info ServerSynchronizer.cpp:594: nextHeartbeatSequenceNumber(10506214) adding peer(12)
+175107.621 Info ServerMultiplayerManager.cpp:808: updateTick(4375221) changing state from(InGame) to(InGameSavingMap)
+175107.636 Info ServerMultiplayerManager.cpp:978: updateTick(4375221) received stateChanged peerID(12) oldState(Ready) newState(ConnectedWaitingForMap)
+175108.153 Info ServerMultiplayerManager.cpp:1039: UpdateTick(4375221) Serving map(/opt/factorio/temp/mp-save-11.zip) for peer(12) size(8756324) auxiliary(129) crc(772291952)
+175108.153 Info ServerMultiplayerManager.cpp:808: updateTick(4375221) changing state from(InGameSavingMap) to(InGame)
+175108.203 Info ServerMultiplayerManager.cpp:978: updateTick(4375223) received stateChanged peerID(12) oldState(ConnectedWaitingForMap) newState(ConnectedDownloadingMap)
+175108.603 Info ServerMultiplayerManager.cpp:978: updateTick(4375247) received stateChanged peerID(12) oldState(ConnectedDownloadingMap) newState(ConnectedLoadingMap)
+175109.769 Info ServerMultiplayerManager.cpp:978: updateTick(4375317) received stateChanged peerID(12) oldState(ConnectedLoadingMap) newState(TryingToCatchUp)
+175109.936 Info ServerMultiplayerManager.cpp:978: updateTick(4375327) received stateChanged peerID(12) oldState(TryingToCatchUp) newState(WaitingForCommandToStartSendingTickClosures)
+175109.936 Info GameActionHandler.cpp:4477: UpdateTick (4375327) processed PlayerJoinGame peerID(12) playerIndex(3) mode(connect) 
+175109.986 Info ServerMultiplayerManager.cpp:978: updateTick(4375330) received stateChanged peerID(12) oldState(WaitingForCommandToStartSendingTickClosures) newState(InGame)
+175387.836 Info AppManager.cpp:323: Saving to _autosave2 (blocking).
+175388.369 Info AppManagerStates.cpp:2110: Saving finished
+175988.369 Info AppManager.cpp:323: Saving to _autosave3 (blocking).
+175988.953 Info AppManagerStates.cpp:2110: Saving finished
+176588.953 Info AppManager.cpp:323: Saving to _autosave4 (blocking).
+176589.486 Info AppManagerStates.cpp:2110: Saving finished
+177189.486 Info AppManager.cpp:323: Saving to _autosave5 (blocking).
+177190.053 Info AppManagerStates.cpp:2110: Saving finished
+177790.053 Info AppManager.cpp:323: Saving to _autosave1 (blocking).
+177790.653 Info AppManagerStates.cpp:2110: Saving finished
+178390.652 Info AppManager.cpp:323: Saving to _autosave2 (blocking).
+178391.419 Info AppManagerStates.cpp:2110: Saving finished
+178991.419 Info AppManager.cpp:323: Saving to _autosave3 (blocking).
+178992.053 Info AppManagerStates.cpp:2110: Saving finished
+179592.052 Info AppManager.cpp:323: Saving to _autosave4 (blocking).
+179592.719 Info AppManagerStates.cpp:2110: Saving finished
+180192.719 Info AppManager.cpp:323: Saving to _autosave5 (blocking).
+180193.353 Info AppManagerStates.cpp:2110: Saving finished
+180793.352 Info AppManager.cpp:323: Saving to _autosave1 (blocking).
+180793.986 Info AppManagerStates.cpp:2110: Saving finished
+181393.986 Info AppManager.cpp:323: Saving to _autosave2 (blocking).
+181394.619 Info AppManagerStates.cpp:2110: Saving finished
+181994.619 Info AppManager.cpp:323: Saving to _autosave3 (blocking).
+181995.219 Info AppManagerStates.cpp:2110: Saving finished
+182595.219 Info AppManager.cpp:323: Saving to _autosave4 (blocking).
+182595.854 Info AppManagerStates.cpp:2110: Saving finished
+183195.852 Info AppManager.cpp:323: Saving to _autosave5 (blocking).
+183196.486 Info AppManagerStates.cpp:2110: Saving finished
+183796.486 Info AppManager.cpp:323: Saving to _autosave1 (blocking).
+183797.269 Info AppManagerStates.cpp:2110: Saving finished
+184397.269 Info AppManager.cpp:323: Saving to _autosave2 (blocking).
+184397.953 Info AppManagerStates.cpp:2110: Saving finished
+184997.952 Info AppManager.cpp:323: Saving to _autosave3 (blocking).
+184998.686 Info AppManagerStates.cpp:2110: Saving finished
+185598.686 Info AppManager.cpp:323: Saving to _autosave4 (blocking).
+185599.369 Info AppManagerStates.cpp:2110: Saving finished
+186199.369 Info AppManager.cpp:323: Saving to _autosave5 (blocking).
+186199.986 Info AppManagerStates.cpp:2110: Saving finished
+186799.985 Info AppManager.cpp:323: Saving to _autosave1 (blocking).
+186800.652 Info AppManagerStates.cpp:2110: Saving finished
+187112.969 Info ServerMultiplayerManager.cpp:1086: Disconnect notification for peer (10)
+187112.969 Info ServerMultiplayerManager.cpp:978: updateTick(5094740) received stateChanged peerID(10) oldState(InGame) newState(DisconnectScheduled)
+187112.969 Info ServerSynchronizer.cpp:613: nextHeartbeatSequenceNumber(11226529) removing peer(10).
+187166.902 ConnectionRequestReplyConfirm (type(ConnectionRequestReplyConfirm) ) from(IP ADDR:({188.134.68.183:53035}))
+187166.902 Info ServerRouter.cpp:465: Replying to connectionRequest for address(IP ADDR:({188.134.68.183:53035})).
+187166.902 Info ServerSynchronizer.cpp:594: nextHeartbeatSequenceNumber(11229764) adding peer(13)
+187166.921 Info ServerMultiplayerManager.cpp:808: updateTick(5097977) changing state from(InGame) to(InGameSavingMap)
+187166.935 Info ServerMultiplayerManager.cpp:978: updateTick(5097977) received stateChanged peerID(13) oldState(Ready) newState(ConnectedWaitingForMap)
+187167.502 Info ServerMultiplayerManager.cpp:1039: UpdateTick(5097977) Serving map(/opt/factorio/temp/mp-save-12.zip) for peer(13) size(9396346) auxiliary(129) crc(1485285514)
+187167.502 Info ServerMultiplayerManager.cpp:808: updateTick(5097977) changing state from(InGameSavingMap) to(InGame)
+187167.552 Info ServerMultiplayerManager.cpp:978: updateTick(5097979) received stateChanged peerID(13) oldState(ConnectedWaitingForMap) newState(ConnectedDownloadingMap)
+187169.269 Info ServerMultiplayerManager.cpp:978: updateTick(5098082) received stateChanged peerID(13) oldState(ConnectedDownloadingMap) newState(ConnectedLoadingMap)
+187170.152 Info ServerMultiplayerManager.cpp:978: updateTick(5098135) received stateChanged peerID(13) oldState(ConnectedLoadingMap) newState(TryingToCatchUp)
+187170.419 Info ServerMultiplayerManager.cpp:978: updateTick(5098151) received stateChanged peerID(13) oldState(TryingToCatchUp) newState(WaitingForCommandToStartSendingTickClosures)
+187170.419 Info GameActionHandler.cpp:4477: UpdateTick (5098151) processed PlayerJoinGame peerID(13) playerIndex(0) mode(connect) 
+187170.469 Info ServerMultiplayerManager.cpp:978: updateTick(5098154) received stateChanged peerID(13) oldState(WaitingForCommandToStartSendingTickClosures) newState(InGame)
+187401.252 Info AppManager.cpp:323: Saving to _autosave2 (blocking).
+187401.852 Info AppManagerStates.cpp:2110: Saving finished
+187698.802 Info ServerMultiplayerManager.cpp:1086: Disconnect notification for peer (13)
+187698.802 Info ServerMultiplayerManager.cpp:978: updateTick(5129818) received stateChanged peerID(13) oldState(InGame) newState(DisconnectScheduled)
+187698.803 Info ServerSynchronizer.cpp:613: nextHeartbeatSequenceNumber(11261679) removing peer(13).
+187707.485 Info ServerMultiplayerManager.cpp:1086: Disconnect notification for peer (12)
+187707.486 Info ServerMultiplayerManager.cpp:978: updateTick(5130339) received stateChanged peerID(12) oldState(InGame) newState(DisconnectScheduled)
+187707.486 Info ServerSynchronizer.cpp:613: nextHeartbeatSequenceNumber(11262200) removing peer(12).
+187708.485 Info ServerMultiplayerManager.cpp:1231: Auto saving map as /opt/factorio/saves/default.zip
+187708.502 Info AppManager.cpp:415: Saving game as /opt/factorio/saves/default.zip
+187709.119 Info AppManagerStates.cpp:2110: Saving finished
+187711.502 Received SIGINT, shutting down
+187711.502 Quitting: signal.
+187711.502 Info MainLoop.cpp:438: Saving map as /opt/factorio/saves/default.zip
+187711.559 Info MainLoop.cpp:449: Saving progress: 0.012346%
+187711.703 Info MainLoop.cpp:449: Saving progress: 100.000000%
+187711.893 Info ServerMultiplayerManager.cpp:119: Disconnecting multiplayer connection.
+187711.893 Info ServerMultiplayerManager.cpp:808: updateTick(5130340) changing state from(InGame) to(DisconnectingScheduled)
+187711.927 Info ServerMultiplayerManager.cpp:808: updateTick(5130340) changing state from(DisconnectingScheduled) to(Disconnecting)
+187711.960 Info ServerMultiplayerManager.cpp:808: updateTick(5130340) changing state from(Disconnecting) to(Disconnected)
+187711.960 Info ServerMultiplayerManager.cpp:146: Quitting multiplayer connection.
+187711.960 Info ServerMultiplayerManager.cpp:808: updateTick(5130340) changing state from(Disconnected) to(Closed)
+187711.960 Info ServerMultiplayerManager.cpp:166: Deleting active scenario (global = true).
+187712.584 Info UDPSocket.cpp:237: Closing socket
+187712.584 Info UDPSocket.cpp:267: Socket closed
+187712.584 Info UDPSocket.cpp:237: Closing socket
+187712.671 Info UDPSocket.cpp:237: Closing socket
+187712.671 Info UDPSocket.cpp:267: Socket closed
+187712.869 Goodbye

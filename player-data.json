@@ -977,7 +977,7 @@
         "name": "Soup made of 7 zalup",
         "description": "Are U Gay?",
         "max_players": 0,
-        "game_time_elapsed": 288,
+        "game_time_elapsed": 4236,
         "has_password": true,
         "tags": 
         [
@@ -992,7 +992,7 @@
       "afk-autokick-interval": 0,
       "required-verification": false
     },
-    "save-name": "init"
+    "save-name": "default2"
   },
   "service-username": "",
   "service-token": "",
