@@ -16,7 +16,7 @@ return
         name = "A",
         variants =
         {
-          sound_variations("__space-age__/sound/ambient/space/space-3/space-3-a", 5, 1.0)
+          sound_variations("__space-age__/sound/ambient/space/space-3/space-3-a", 5, 1.4)
         },
         composition_mode = "randomized",
       },
@@ -24,7 +24,7 @@ return
         name = "B",
         variants =
         {
-          sound_variations("__space-age__/sound/ambient/space/space-3/space-3-b", 9, 1.0)
+          sound_variations("__space-age__/sound/ambient/space/space-3/space-3-b", 9, 1.4)
         },
         composition_mode = "randomized",
       },
@@ -32,7 +32,7 @@ return
         name = "C",
         variants =
         {
-          sound_variations("__space-age__/sound/ambient/space/space-3/space-3-c", 4, 1.0)
+          sound_variations("__space-age__/sound/ambient/space/space-3/space-3-c", 4, 1.4)
         },
         composition_mode = "randomized",
       },
@@ -40,7 +40,7 @@ return
         name = "D",
         variants =
         {
-          sound_variations("__space-age__/sound/ambient/space/space-3/space-3-d", 2, 1.0)
+          sound_variations("__space-age__/sound/ambient/space/space-3/space-3-d", 2, 1.4)
         },
         composition_mode = "randomized",
       },
@@ -48,7 +48,7 @@ return
         name = "E",
         variants =
         {
-          sound_variations("__space-age__/sound/ambient/space/space-3/space-3-e", 2, 1.0)
+          sound_variations("__space-age__/sound/ambient/space/space-3/space-3-e", 2, 1.4)
         },
         composition_mode = "randomized",
       },
@@ -56,7 +56,7 @@ return
         name = "F",
         variants =
         {
-          sound_variations("__space-age__/sound/ambient/space/space-3/space-3-f", 1, 1.0)
+          sound_variations("__space-age__/sound/ambient/space/space-3/space-3-f", 1, 1.4)
         },
         composition_mode = "randomized",
       },

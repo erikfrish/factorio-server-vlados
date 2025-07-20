@@ -17,7 +17,7 @@ return
         name = "A",
         variants =
         {
-          sound_variations("__space-age__/sound/ambient/aquilo/interlude-2/interlude-2", 4, 1.0)
+          sound_variations("__space-age__/sound/ambient/aquilo/interlude-2/interlude-2", 4, 1.4)
         },
         composition_mode = "randomized",
       },

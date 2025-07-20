@@ -99,7 +99,7 @@ DATA PRIVACY POLICY
    - We are WUBE Software Ltd., the developers of your favourite game Factorio.
    - Because we can determine the purposes and means of the processing of your personal data, we are considered to be the controller of personal data under GDPR rules.
    - Our complete company details are:
-     -  WUBE Software Ltd (Company reg. no: 9201188) Registered Seat: 3 Gower Street, London, WC1E 6HA
+     - WUBE Software Ltd (Company reg. no: 9201188) Registered Seat: 3 Gower Street, London, WC1E 6HA
 
   HOW WE COLLECT YOUR DATA
    - We are able to collect your data in different ways, in particular:
@@ -111,7 +111,8 @@ DATA PRIVACY POLICY
 
   WHAT TYPE OF DATA WE COLLECT AND FOR WHICH PURPOSE
    - As a part of the process of registration on our website, forum and wiki, we process your e-mail address, your username and your IP address, in order to ensure a smooth functioning of your account.
-   - When you download Factorio or make use of any automatic update of the game, we process the time and the type of download and your username for the purposes of monitoring the demand for the game and also for the purposes of tackling the cases of illegal downloading.       - In connection with emailing we intend to process only your email address. In case you are not a Factorio player or a registered user, you will be required to give consent to the processing of your address in order to receive the newsletter. You can always unsubscribe easily by clicking the appropriate link included in each e-mail or by sending an e-mail to support@factorio.com
+   - When you download Factorio or make use of any automatic update of the game, we process the time and the type of download and your username for the purposes of monitoring the demand for the game and also for the purposes of tackling the cases of illegal downloading.
+   - In connection with emailing we intend to process only your email address. In case you are not a Factorio player or a registered user, you will be required to give consent to the processing of your address in order to receive the newsletter. You can always unsubscribe easily by clicking the appropriate link included in each e-mail or by sending an e-mail to support@factorio.com
    - If you contact us with a question or a request, we can process your e-mail address and other personal data you decide to provide us with. Please be careful your privacy and do not include unnecessary sensitive information.
    - From time to time we feel like there's not enough of us! If you send us your CV we may process the personal data you include, such as your given name,name, address, education, qualification and professional experience, and e-mail address or telephone number, all for the purpose of evaluating your application hiring the right candidate. After the hiring process is over, we do not process any personal data that are not necessary anymore.
    - For the processing of payments we use external providers'; services. We do not process any information regarding your payment card or any other information other than those mentioned above.

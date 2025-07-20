@@ -17,7 +17,7 @@ return
         name = "A",
         variants =
         {
-          sound_variations("__space-age__/sound/ambient/gleba/interlude-4/interlude-4", 4, 1.0)
+          sound_variations("__space-age__/sound/ambient/gleba/interlude-4/interlude-4", 4, 1.4)
         },
         composition_mode = "randomized",
       },

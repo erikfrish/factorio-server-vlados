@@ -1,100 +1,50 @@
-   0.000 2025-07-04 21:49:02; Factorio 2.0.55 (build 83138, linux64, headless, space-age)
-   0.039 Operating system: Linux (Ubuntu 22.04)
-   0.039 Program arguments: "/opt/factorio/bin/x64/factorio" "--start-server-load-latest" "--server-settings" "/opt/factorio/data/server-settings.json" "--bind" "0.0.0.0" "--port" "9999" 
-   0.039 Config path: /opt/factorio/config/config.ini
-   0.039 Read data path: /opt/factorio/data
-   0.039 Write data path: /opt/factorio [24060/29587MB]
-   0.039 Binaries path: /opt/factorio/bin
-   0.051 System info: [CPU: Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz, 16 cores, RAM: 3817 MB]
-   0.051 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEODRIVER=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
-   0.051 Running in headless mode
-   0.051 Audio is disabled
-   0.091 Info ModManager.cpp:444: FeatureFlag expansion-shaders = true
-   0.091 Info ModManager.cpp:444: FeatureFlag freezing = true
-   0.092 Info ModManager.cpp:444: FeatureFlag quality = true
-   0.092 Info ModManager.cpp:444: FeatureFlag rail-bridges = true
-   0.092 Info ModManager.cpp:444: FeatureFlag segmented-units = true
-   0.092 Info ModManager.cpp:444: FeatureFlag space-travel = true
-   0.092 Info ModManager.cpp:444: FeatureFlag spoiling = true
-   0.095 Loading mod core 0.0.0 (data.lua)
-   0.112 Loading mod base 2.0.55 (data.lua)
-   0.297 Loading mod elevated-rails 2.0.55 (data.lua)
-   0.323 Loading mod quality 2.0.55 (data.lua)
-   0.339 Loading mod space-age 2.0.55 (data.lua)
-   0.586 Loading mod base 2.0.55 (data-updates.lua)
-   0.600 Loading mod quality 2.0.55 (data-updates.lua)
-   0.659 Loading mod space-age 2.0.55 (data-updates.lua)
-   0.787 Checksum for core: 1599024484
-   0.787 Checksum of base: 2095342242
-   0.787 Checksum of elevated-rails: 755107374
-   0.787 Checksum of quality: 3594706471
-   0.787 Checksum of space-age: 2561352795
-   1.418 Prototype list checksum: 611276394
-   1.524 Info PlayerData.cpp:64: Local player-data.json available, timestamp 1751665552
-   1.524 Info PlayerData.cpp:71: Cloud player-data.json unavailable
-   1.526 Factorio initialised
-   1.527 Info ServerSynchronizer.cpp:22: nextHeartbeatSequenceNumber(0) initialized Synchronizer nextTickClosureTick(0).
-   1.527 Info ServerMultiplayerManager.cpp:808: updateTick(18446744073709551615) changing state from(Ready) to(PreparedToHostGame)
-   1.527 Info ServerMultiplayerManager.cpp:808: updateTick(18446744073709551615) changing state from(PreparedToHostGame) to(CreatingGame)
-   1.527 Loading map /opt/factorio/saves/_autosave130.zip: 21680039 bytes.
-   1.549 Loading level.dat: 63551374 bytes.
-   1.550 Info Scenario.cpp:153: Map version 2.0.55-0
-   3.735 Blueprint storage "blueprint-storage-2.dat" was not found, trying to load previous version storage "blueprint-storage.dat"
-   3.735 Loading script.dat: 1267 bytes.
-   3.740 Checksum for script __level__/control.lua: 2734153661
-   3.762 Info UDPSocket.cpp:37: Opening socket at (IP ADDR:({0.0.0.0:9999}))
-   3.762 Hosting game at IP ADDR:({0.0.0.0:9999})
-   3.762 Info ServerMultiplayerManager.cpp:808: updateTick(19044001) changing state from(CreatingGame) to(InGame)
-   3.762 Info UDPSocket.cpp:49: Opening socket for broadcast
-   3.762 Info CommandLineMultiplayer.cpp:292: Maximum segment size = 100; minimum segment size = 25; maximum-segment-size peer count = 10; minimum-segment-size peer count = 20
-   4.246 ConnectionRequestReplyConfirm (type(ConnectionRequestReplyConfirm) ) from(IP ADDR:({10.11.12.13:61375}))
-   4.246 Info ServerRouter.cpp:465: Replying to connectionRequest for address(IP ADDR:({10.11.12.13:61375})).
-   4.246 Info ServerSynchronizer.cpp:594: nextHeartbeatSequenceNumber(28) adding peer(1)
-   4.264 Info ServerMultiplayerManager.cpp:808: updateTick(19044001) changing state from(InGame) to(InGameSavingMap)
-   4.279 Info ServerMultiplayerManager.cpp:978: updateTick(19044001) received stateChanged peerID(1) oldState(Ready) newState(ConnectedWaitingForMap)
-   4.879 Info ServerMultiplayerManager.cpp:1039: UpdateTick(19044001) Serving map(/opt/factorio/temp/mp-save-0.zip) for peer(1) size(21679343) auxiliary(129) crc(2368940170)
-   4.879 Info ServerMultiplayerManager.cpp:808: updateTick(19044001) changing state from(InGameSavingMap) to(InGame)
-   4.929 Info ServerMultiplayerManager.cpp:978: updateTick(19044001) received stateChanged peerID(1) oldState(ConnectedWaitingForMap) newState(ConnectedDownloadingMap)
-   6.862 Info ServerMultiplayerManager.cpp:978: updateTick(19044001) received stateChanged peerID(1) oldState(ConnectedDownloadingMap) newState(ConnectedLoadingMap)
-   8.712 Info ServerMultiplayerManager.cpp:978: updateTick(19044001) received stateChanged peerID(1) oldState(ConnectedLoadingMap) newState(TryingToCatchUp)
-   8.712 Info ServerMultiplayerManager.cpp:978: updateTick(19044001) received stateChanged peerID(1) oldState(TryingToCatchUp) newState(WaitingForCommandToStartSendingTickClosures)
-   8.729 Info GameActionHandler.cpp:4477: UpdateTick (19044001) processed PlayerJoinGame peerID(1) playerIndex(3) mode(connect) 
-   8.846 Info ServerMultiplayerManager.cpp:978: updateTick(19044008) received stateChanged peerID(1) oldState(WaitingForCommandToStartSendingTickClosures) newState(InGame)
-  11.762 ConnectionRequestReplyConfirm (type(ConnectionRequestReplyConfirm) ) from(IP ADDR:({188.134.68.183:35639}))
-  11.762 Info ServerRouter.cpp:465: Replying to connectionRequest for address(IP ADDR:({188.134.68.183:35639})).
-  11.763 Info ServerSynchronizer.cpp:594: nextHeartbeatSequenceNumber(479) adding peer(2)
-  11.781 Info ServerMultiplayerManager.cpp:808: updateTick(19044184) changing state from(InGame) to(InGameSavingMap)
-  11.796 Info ServerMultiplayerManager.cpp:978: updateTick(19044184) received stateChanged peerID(2) oldState(Ready) newState(ConnectedWaitingForMap)
-  12.363 Info ServerMultiplayerManager.cpp:1039: UpdateTick(19044184) Serving map(/opt/factorio/temp/mp-save-1.zip) for peer(2) size(21633491) auxiliary(129) crc(117786171)
-  12.363 Info ServerMultiplayerManager.cpp:808: updateTick(19044184) changing state from(InGameSavingMap) to(InGame)
-  12.412 Info ServerMultiplayerManager.cpp:978: updateTick(19044186) received stateChanged peerID(2) oldState(ConnectedWaitingForMap) newState(ConnectedDownloadingMap)
-  17.162 Info ServerMultiplayerManager.cpp:978: updateTick(19044471) received stateChanged peerID(2) oldState(ConnectedDownloadingMap) newState(ConnectedLoadingMap)
-  18.329 Info ServerMultiplayerManager.cpp:978: updateTick(19044541) received stateChanged peerID(2) oldState(ConnectedLoadingMap) newState(TryingToCatchUp)
-  18.929 Info ServerMultiplayerManager.cpp:978: updateTick(19044577) received stateChanged peerID(2) oldState(TryingToCatchUp) newState(WaitingForCommandToStartSendingTickClosures)
-  18.929 Info GameActionHandler.cpp:4477: UpdateTick (19044577) processed PlayerJoinGame peerID(2) playerIndex(0) mode(connect) 
-  18.979 Info ServerMultiplayerManager.cpp:978: updateTick(19044580) received stateChanged peerID(2) oldState(WaitingForCommandToStartSendingTickClosures) newState(InGame)
- 609.329 Info AppManager.cpp:323: Saving to _autosave130 (blocking).
- 610.179 Info AppManagerStates.cpp:2110: Saving finished
-1210.179 Info AppManager.cpp:323: Saving to _autosave131 (blocking).
-1210.996 Info AppManagerStates.cpp:2110: Saving finished
-1810.996 Info AppManager.cpp:323: Saving to _autosave132 (blocking).
-1811.812 Info AppManagerStates.cpp:2110: Saving finished
-2411.812 Info AppManager.cpp:323: Saving to _autosave133 (blocking).
-2412.646 Info AppManagerStates.cpp:2110: Saving finished
-3012.646 Info AppManager.cpp:323: Saving to _autosave134 (blocking).
-3013.512 Info AppManagerStates.cpp:2110: Saving finished
-3381.479 Info AppManager.cpp:415: Saving game as /opt/factorio/saves/_autosave130.zip
-3382.312 Info AppManagerStates.cpp:2110: Saving finished
-3614.346 Info AppManager.cpp:323: Saving to _autosave135 (blocking).
-3615.229 Info AppManagerStates.cpp:2110: Saving finished
-4215.229 Info AppManager.cpp:323: Saving to _autosave136 (blocking).
-4216.129 Info AppManagerStates.cpp:2110: Saving finished
-4816.129 Info AppManager.cpp:323: Saving to _autosave137 (blocking).
-4817.012 Info AppManagerStates.cpp:2110: Saving finished
-5417.012 Info AppManager.cpp:323: Saving to _autosave138 (blocking).
-5417.962 Info AppManagerStates.cpp:2110: Saving finished
-5802.662 Info ServerMultiplayerManager.cpp:1086: Disconnect notification for peer (2)
-5802.662 Info ServerMultiplayerManager.cpp:978: updateTick(19391083) received stateChanged peerID(2) oldState(InGame) newState(DisconnectScheduled)
-5802.663 Info ServerSynchronizer.cpp:613: nextHeartbeatSequenceNumber(347934) removing peer(2).
-5813.795 Info AppManager.cpp:415: Saving game as /opt/factorio/saves/_autosave130.zip
-5814.746 Info AppManagerStates.cpp:2110: Saving finished
+   0.000 2025-07-20 11:18:47; Factorio 2.0.55 (build 83138, linux64, headless, space-age)
+   0.062 Operating system: Linux (Ubuntu 22.04)
+   0.063 Program arguments: "/opt/factorio/bin/x64/factorio" "--start-server-load-latest" "--server-settings" "/opt/factorio/data/server-settings.json" "--bind" "0.0.0.0" "--port" "9999" 
+   0.063 Config path: /opt/factorio/config/config.ini
+   0.063 Read data path: /opt/factorio/data
+   0.063 Write data path: /opt/factorio [0/29587MB]
+   0.063 Binaries path: /opt/factorio/bin
+   0.077 System info: [CPU: Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz, 16 cores, RAM: 3817 MB]
+   0.077 Environment: DISPLAY=<unset> WAYLAND_DISPLAY=<unset> DESKTOP_SESSION=<unset> XDG_SESSION_DESKTOP=<unset> XDG_CURRENT_DESKTOP=<unset> SDL_VIDEODRIVER=<unset> __GL_FSAA_MODE=<unset> __GL_LOG_MAX_ANISO=<unset> __GL_SYNC_TO_VBLANK=<unset> __GL_SORT_FBCONFIGS=<unset> __GL_YIELD=<unset>
+   0.081 Running in headless mode
+   0.081 Audio is disabled
+   0.125 Info ModManager.cpp:444: FeatureFlag expansion-shaders = true
+   0.125 Info ModManager.cpp:444: FeatureFlag freezing = true
+   0.125 Info ModManager.cpp:444: FeatureFlag quality = true
+   0.125 Info ModManager.cpp:444: FeatureFlag rail-bridges = true
+   0.125 Info ModManager.cpp:444: FeatureFlag segmented-units = true
+   0.125 Info ModManager.cpp:444: FeatureFlag space-travel = true
+   0.125 Info ModManager.cpp:444: FeatureFlag spoiling = true
+   0.132 Loading mod core 0.0.0 (data.lua)
+   0.156 Loading mod base 2.0.55 (data.lua)
+   0.411 Loading mod elevated-rails 2.0.55 (data.lua)
+   0.451 Loading mod quality 2.0.55 (data.lua)
+   0.475 Loading mod space-age 2.0.55 (data.lua)
+   0.940 Loading mod base 2.0.55 (data-updates.lua)
+   0.956 Loading mod quality 2.0.55 (data-updates.lua)
+   0.981 Loading mod space-age 2.0.55 (data-updates.lua)
+   1.113 Checksum for core: 1599024484
+   1.113 Checksum of base: 2095342242
+   1.113 Checksum of elevated-rails: 755107374
+   1.113 Checksum of quality: 3594706471
+   1.113 Checksum of space-age: 2561352795
+   1.750 Prototype list checksum: 611276394
+   1.869 Info PlayerData.cpp:64: Local player-data.json available, timestamp 1753009569
+   1.869 Info PlayerData.cpp:71: Cloud player-data.json unavailable
+   1.875 Factorio initialised
+   1.877 Info ServerSynchronizer.cpp:22: nextHeartbeatSequenceNumber(0) initialized Synchronizer nextTickClosureTick(0).
+   1.877 Info ServerMultiplayerManager.cpp:808: updateTick(18446744073709551615) changing state from(Ready) to(PreparedToHostGame)
+   1.877 Info ServerMultiplayerManager.cpp:808: updateTick(18446744073709551615) changing state from(PreparedToHostGame) to(CreatingGame)
+   1.878 Loading map /opt/factorio/saves/_autosave130.zip: 82043248 bytes.
+   1.881 Error ServerMultiplayerManager.cpp:84: MultiplayerManager failed: "filesystem error: create_directories "/opt/factorio/temp/currently-playing" failed: Permission denied [/opt/factorio/temp/currently-playing]"
+   1.881 Info ServerMultiplayerManager.cpp:808: updateTick(18446744073709551615) changing state from(CreatingGame) to(InitializationFailed)
+   1.881 Info CommandLineMultiplayer.cpp:211: Exit point.
+   1.889 Info ServerMultiplayerManager.cpp:146: Quitting multiplayer connection.
+   1.889 Info ServerMultiplayerManager.cpp:808: updateTick(18446744073709551615) changing state from(InitializationFailed) to(Closed)
+   1.889 Info ServerMultiplayerManager.cpp:166: Deleting active scenario (global = true).
+   1.893 Warning WriteFileGuard.cpp:52: Writing /opt/factorio/player-data.json failed; previous version (if any) should still be available
+   1.893 Error PlayerData.cpp:446: Failed to save player data: Error when writing to file: No space left on device. File: /opt/factorio/player-data.tmp.json.
+   1.986 Error ModManager.cpp:160: writeModlist threw an exception: Permission denied
+   1.991 Info UDPSocket.cpp:237: Closing socket
+   1.992 Goodbye

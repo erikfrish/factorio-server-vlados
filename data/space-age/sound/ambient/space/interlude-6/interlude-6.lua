@@ -16,7 +16,7 @@ return
         name = "A",
         variants =
         {
-          sound_variations("__space-age__/sound/ambient/space/interlude-6/interlude-6-a", 2, 1.0)
+          sound_variations("__space-age__/sound/ambient/space/interlude-6/interlude-6-a", 2, 1.8)
         },
         composition_mode = "randomized",
       },
@@ -25,7 +25,7 @@ return
         name = "B",
         variants =
         {
-          sound_variations("__space-age__/sound/ambient/space/interlude-6/interlude-6-b", 3, 1.0)
+          sound_variations("__space-age__/sound/ambient/space/interlude-6/interlude-6-b", 3, 1.8)
         },
         composition_mode = "randomized",
       },

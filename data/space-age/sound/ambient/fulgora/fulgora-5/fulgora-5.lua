@@ -18,18 +18,18 @@ return
         variants =
         {
           {
-            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-start.ogg", volume = 1.0},
-            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-1.ogg", volume = 1.0},
-            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-2.ogg", volume = 1.0},
-            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-3.ogg", volume = 1.0},
-            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-4.ogg", volume = 1.0},
+            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-start.ogg", volume = 2.8},
+            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-1.ogg", volume = 2.8},
+            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-2.ogg", volume = 2.8},
+            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-3.ogg", volume = 2.8},
+            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-4.ogg", volume = 2.8},
           },
           {
-            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-start.ogg", volume = 1.0},
-            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-5.ogg", volume = 1.0},
-            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-6.ogg", volume = 1.0},
-            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-7.ogg", volume = 1.0},
-            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-8.ogg", volume = 1.0},
+            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-start.ogg", volume = 2.8},
+            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-5.ogg", volume = 2.8},
+            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-6.ogg", volume = 2.8},
+            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-7.ogg", volume = 2.8},
+            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-8.ogg", volume = 2.8},
           },
         },
         composition_mode = "randomized",
@@ -41,16 +41,16 @@ return
         variants =
         {
           {
-            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-1.ogg", volume = 1.0},
-            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-2.ogg", volume = 1.0},
-            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-3.ogg", volume = 1.0},
-            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-4.ogg", volume = 1.0},
+            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-1.ogg", volume = 2.8},
+            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-2.ogg", volume = 2.8},
+            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-3.ogg", volume = 2.8},
+            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-4.ogg", volume = 2.8},
           },
           {
-            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-5.ogg", volume = 1.0},
-            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-6.ogg", volume = 1.0},
-            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-7.ogg", volume = 1.0},
-            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-8.ogg", volume = 1.0},
+            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-5.ogg", volume = 2.8},
+            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-6.ogg", volume = 2.8},
+            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-7.ogg", volume = 2.8},
+            {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-a-8.ogg", volume = 2.8},
           },
         },
         composition_mode = "randomized",
@@ -60,8 +60,8 @@ return
         name = "BC",
         variants =
         {
-          sound_variations("__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-b", 7, 0.6),
-          sound_variations("__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-c", 7, 0.6),
+          sound_variations("__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-b", 7, 0.85),
+          sound_variations("__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-c", 7, 0.85),
         },
         composition_mode = "randomized",
         number_of_sublayers = 4,
@@ -81,7 +81,7 @@ return
         name = "D",
         variants =
         {
-          {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-d.ogg", volume = 1.0},
+          {filename = "__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5-d.ogg", volume = 2.8},
         },
         composition_mode = "randomized",
       },

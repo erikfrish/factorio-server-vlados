@@ -17,7 +17,7 @@ return
         name = "A",
         variants =
         {
-          sound_variations("__space-age__/sound/ambient/vulcanus/interlude-2/interlude-2-a", 20, 1.0)
+          sound_variations("__space-age__/sound/ambient/vulcanus/interlude-2/interlude-2-a", 20, 1.8)
         },
         composition_mode = "randomized",
       },
@@ -26,7 +26,7 @@ return
         name = "B",
         variants =
         {
-          sound_variations("__space-age__/sound/ambient/vulcanus/interlude-2/interlude-2-b", 13, 1.0)
+          sound_variations("__space-age__/sound/ambient/vulcanus/interlude-2/interlude-2-b", 13, 1.8)
         },
         composition_mode = "randomized"
       },
@@ -35,7 +35,7 @@ return
         name = "C",
         variants =
         {
-          sound_variations("__space-age__/sound/ambient/vulcanus/interlude-2/interlude-2-c", 1, 1.0)
+          sound_variations("__space-age__/sound/ambient/vulcanus/interlude-2/interlude-2-c", 1, 1.8)
         },
         composition_mode = "randomized"
       },

@@ -1,4 +1,125 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.56
+  Bugfixes:
+    - Fixed that player would continue walking when opening the on-screen keyboard.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.55
+  Minor Features:
+    - Spidertron remote tooltips show a camera view of the selected spiders.
+    - Show existing turrets' radius when holding a turret to be built. 
+    - Smart underground belt building now considers splitter to be an obstacle if there was something connected to the lane already.
+  Bugfixes:
+    - Fixed a crash when game was saved in complete mode (for desync, benchmark or heavy mode) that could happen after a save file was loaded from an older version requiring transport line groups to be reconstructed while there were also blueprints with transport belts present in the save.
+    - Fixed vehicle ammo refill was not working. 
+    - Fixed splitter gui was not updated in some cases. 
+    - Fixed heat pipe connections did not flip. 
+    - Fixed blueprint tile building sometimes not allowing partial builds 
+    - Fixed some issues around setting driving for a vehicle on different surface via scripts 
+    - Fixed script could rotate inserters into diagonal directions. 
+    - Fixed turret cooldown not accounting for StartingAttack phase length, making effective turret cooldowns longer.
+    - Fixed a crash due to item request proxy inconsistency.
+    - Fixed that you couldn't immediately clear the cursor if the inventory "hand" was on a filtered slot and you held a different item. Hand will now move to a new slot when swapping it. 
+    - Fixed that ghost-building upgrading of an entity with module requests would clear the module requests. 
+    - Fixed that recipe with quality tooltip didn't work for modded GUIs. 
+    - Fixed math2d.vector.to_orientation() not enforcing range [0, 1) for the return value. 
+    - Fixed a crash when reading LuaStyle::horizontal_spacing and vertical_spacing of a table which didn't have these values set. 
+    - Fixed LuaEntityPrototype::get_inventory_size() returning nil for rocket_silo_rocket and rocket_silo_trash inventories. 
+    - Fixed that AnimationSheet::repeat_count wasn't handled correctly and could crash the game. 
+    - Fixed that internal console textfield scrollbar moved to the beginning and back after every key press if the message was too long.
+    - Fixed LuaGameScript::take_technology_screenshot was not processing selected_technology. 
+    - Fixed that item insertion requests didn't work well with spidertron's sorted inventory. 
+    - Fixed storage tank was not showing fluid content through window when frozen. 
+    - Fixed any filter was showing in copy-paste filters tip. 
+    - Fixed a crash when replacing a buffered fluidbox with an unbuffered fluidbox. 
+    - Fixed missing localisation for nuclear explosion effects. 
+    - Fixed that character armor animations did not play correctly. 
+    - Fixed that beacons would not respect the allowed module categories of the affected machine. 
+    - Fixed a crash when using --dump-prototype-locale with some mods. 
+    - Fixed that red wire shadows on selector combinators did not render correctly in the east orientation. 
+    - Fixed that the galaxy of fame button would not show when in multiplayer. 
+    - Fixed ghost rotated overbuild over real entity would not generate events. 
+    - Fixed super-forcing gates and walls would sometimes cause deconstruction of adjacent curved rails.
+    - Fixed blueprints not building cover tiles when foundation tile build failed on the same position 
+    - Fixed a broken menu simulation. 
+    - Fixed a crash when trying to render corpses without graphics defined. 
+    - Fixed an issue with choose-elem-button highlighting when disabling/enabling widgets. 
+    - Fixed a rendering issue with tables when removing all child widgets at once. 
+    - Fixed that changing recipes in ghost assemblers would always clear requested modules. 
+    - Fixed researched and disabled technologies being shown in the technology tree and considered as "not researched" for prerequisites checks. 
+    - Fixed that valves would play a working sound when no fluid is flowing.
+    - Fixed that LuaEntity::launch_rocket() did not work with some parameter combinations. 
+    - Fixed consistency issue with locomotive's fuel inventory if it has non fuel items in it.
+    - Fixed several issues of factoriopedia entries being in the wrong order. 
+    - Fixed that the blueprint GUI could think there were pending changes when there weren't. 
+    - Fixed spidertron remote not showing the color of the selected spiders. 
+    - Fixed super forced building across underground belts not working for some directions. 
+    - Fixed that instant upgrading modules was not instant. 
+    - Fixed that when parametrising something without quality (fluid for example), confirming with shortcut didn't allow to keep the parameter. 
+    - Fixed a crash when a vehicle with roboport equipment was marked for deconstruction. 
+    - Fixed entity ghost colliding colliding with other force's entity marked for deconstruction sometimes causing a crash 
+    - Fixed that fast-replacing furnaces did not put result items into the correct slots. 
+    - Fixed that you could un-toggle all of the time buttons in the production statistics GUI. 
+    - Fixed that finishing a map drag and closing remote view on the same frame would cause remote view to become "stuck" at an offset. 
+    - Fixed that text field rendering did not work correctly when when changing the text value in some cases. 
+    - Fixed that belt dragging over belt undergound gap changed direction in the process, effectively making one part of the drag in the opposite direction.
+    - Fixed a crash in map generation when offset_x/y was infinite by adding stronger noise expression argument validation.
+    - Fixed that disabling a text field widget didn't disable the rich text icon selector. 
+    - Fixed a crash when calling LuaEntity::launch_rocket() with no character.
+    - Fixed a crash related to logistic filters that should not have import from configured but kept having one due to missing migration. 
+    - Fixed it was possible to set "solar" usage priority for electric energy source of entities that are not a solar panel.
+    - Fixed multioctave noise allowing negative and infinite octaves which caused the game to freeze in map generation on ARM systems. 
+    - Fixed a crash when trying to render screenshots of entities marked for upgrade in multiplayer latency. 
+    - Fixed that negative quality effects did not show correctly in tootips. 
+    - Fixed a crash opening the train GUI in spectator controller. 
+    - Fixed that changing recipes in ghost assembling machines didn't remove invalid item requests. 
+    - Fixed that construction robots dispatch for item requests was too slow in networks with many unfulfillable requests. 
+    - Fixed the browse arrows in the remote view changing position when opening the train GUI. 
+    - Fixed listbox items with remarks would have their text cut off unnecessarily. 
+    - Fixed renaming the last train stop on a surface would rename all global uses of the name in interrupts. 
+    - Fixed extra padding above the ghost cursor selection GUI. 
+    - Killed landmines now explode. 
+    - Fixed that ghost upgrading entities in remote view would play a failure sound if the entity supported rotation but was not currently rotatable. 
+    - Fixed that renaming all stops would change the color of all stops with that name. 
+    - Fixed that a long 'Enable train limit' translation would make the train stop GUI expand. 
+    - Fixed textbox overlap in logistic network GUI. 
+    - Fixed a recursive table in data would cause a crash. 
+    - Fixed a crash when script requested printing a localised string that has recursion loop. 
+    - Fixed inserter rotation and extension speed would ignore quality level of normal quality. 
+    - Fixed belt gap traversing bug related to overbuilding ghost undergrounds with real ones. 
+    - Fixed missing train stop limit and priority blueprint parametrisation context captions translations. 
+    - Fixed a crash when clicking on "Show only essential technologies" in technology GUI while a hidden technology is selected. 
+    - Fixed getting an extra warning message of missing underground even when its not needed. 
+    - Fixed that transport belt ghost upgrading could generate unexpected undergrounds. 
+    - Fixed that the blueprint parametrisation formula UI error handling didn't properly fill the variables resulting in false positive errors. 
+    - Fixed that some map generator GUI headers didn't show. 
+    - Fixed that it was not possible for scripts to set the player's zoom level at or below 1/32. 
+    - Fixed that the Constant Combinator GUI had inconsistent default values. 
+    - Fixed upgrade planner upgrading incorrect module slots when the entity was marked for downgrade. 
+    - Added missing notification of "too far to connect" for smart belt dragging when the obstacle is exceeding the limit of the related undergrounds.
+    - Fixed that items in provider chests did not count as available when reading logistic network requests. 
+    - Fixed a crash when setting active=false on logistic/construction robots. 
+    - Changed pipette of fluid recipes to work the same as pipette of item recipes. 
+    - Fixed solar panels on a script created surfaces were not affected by surface properties.
+    - Fixed an issue when changing constant combinator values in multiplayer. 
+    - Fixed that locomotive fuel request couldn't be canceled outside of remote view. 
+    - Fixed that building while in the trains GUI when entered from remote view would build physical items. 
+    - Fixed a crash when trying to parameterize infinity pipe filters. 
+    - Fixed smart belt building over a curve in reversed direction. 
+    - Fixed various problems of smart belt building with no undergrounds in inventory over perpendicular belts. 
+    - Fixed that offshore pump ghosts kept their fluid filters in cases where they weren't meant to. 
+    - Fixed ghosts were not showing wire connection areas properly for combinators and power switches when connecting wires.
+    - Fixed LuaRadarControlBehavior was missing LuaControlBehavior fields.
+    - Fixed a crash when interacting with temporary stops in moving trains. 
+    - Fixed a crash when defining a local noise expression as empty string and using it. 
+    - Fixed a crash when migrating rolling stocks. 
+    - Fixed wire shadow rendering ignoring surface shadow opacity. 
+    - Fixed an issue with scrollable tooltips and label sizes. 
+    - Fixed modded furnaces would not work with item and fluid recipes based on ingredients order.
+    - Fixed a crash when ghost of train stop with custom color is upgraded.
+    - Fixed that a black line could appear between chunks at some zoom levels. 
+  Balancing:
+    - Fuel acceleration bonus and equipment speed bonuses now apply quarter of compound bonus rate to turning rate of tank-driving cars (e.g. tank)
+---------------------------------------------------------------------------------------------------
 Version: 2.0.47
   Minor Features:
     - Added heading car driving option for keyboard input method. Pressing in a direction will make vehicles automatically turn and accelerate to that side of the screen.

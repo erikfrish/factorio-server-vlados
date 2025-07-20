@@ -17,7 +17,7 @@ return
         name = "A",
         variants =
         {
-          sound_variations("__space-age__/sound/ambient/vulcanus/interlude-1/interlude-1-a", 12, 1.0)
+          sound_variations("__space-age__/sound/ambient/vulcanus/interlude-1/interlude-1-a", 12, 1.4)
         },
         composition_mode = "randomized",
         number_of_sublayers = 2,
@@ -28,7 +28,7 @@ return
         name = "B",
         variants =
         {
-          sound_variations("__space-age__/sound/ambient/vulcanus/interlude-1/interlude-1-b", 8, 1.0)
+          sound_variations("__space-age__/sound/ambient/vulcanus/interlude-1/interlude-1-b", 8, 1.4)
         },
         composition_mode = "randomized",
         number_of_sublayers = 2,

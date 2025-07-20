@@ -49,7 +49,7 @@
   "autosave_interval": 10,
 
   "_comment_autosave_slots": "server autosave slots, it is cycled through when the server autosaves.",
-  "autosave_slots": 200,
+  "autosave_slots": 20,
 
   "_comment_afk_autokick_interval": "How many minutes until someone is kicked when doing nothing, 0 for never.",
   "afk_autokick_interval": 0,
